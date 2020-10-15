@@ -28,6 +28,22 @@ class GAME {
      this.gameB = createButton('BASIL SEED');
      this.gameLA = createButton('LAVENDER SEED');
 
+     this.harvestBUTTTON1 = createButton('HARVEST CALENUDLA PLANT');
+     this.harvestBUTTTON2 = createButton('HARVEST SUNFLOWER PLANT');
+     this.harvestBUTTTON3 = createButton('HARVEST TOMATO PLANT');
+     this.harvestBUTTTON4 = createButton('HARVEST LEMONGRASS PLANT');
+     this.harvestBUTTTON5 = createButton('HARVEST MARIGOLD PLANT');
+     this.harvestBUTTTON6 = createButton('HARVEST BASIL PLANT');
+     this.harvestBUTTTON7 = createButton('HARVEST LAVENDER PLANT');
+
+     this.productBUTTON1 = createButton('MAKE A CALENDULA PRODUCT');
+     this.productBUTTON2 = createButton('MAKE A SUNFLOWER PRODUCT');
+     this.productBUTTON3 = createButton('MAKE TOMATO PRODUCTS');
+     this.productBUTTON4 = createButton('MAKE A LEMONGRASS PRODUCT');
+     this.productBUTTON5 = createButton('MAKE A MARIGOLD PRODUCT');
+     this.productBUTTON6 = createButton('MAKE A BASIL PRODUCT');
+     this.productBUTTON7 = createButton('MAKE LAVENDER PRODUCTS');
+
 
      npk1 = 25;
      n1 = 25;
@@ -62,6 +78,8 @@ class GAME {
      this.Nbutton2 = createButton('ADD 1 NITROGEN FERTILIZER');
      this.Mbutton1 = createButton('USE MANURE');
      this.Mbutton2 = createButton('ADD 1 MANURE');
+
+     this.resetBUTTON = createButton('RESTART');
 
    }
 
@@ -191,6 +209,20 @@ class GAME {
 
         miniLAVENDER_IMG = loadImage("minis/miniLAVENDER.png")
 
+        //PRODUCTS
+        calendulaPRODUCT_IMG = loadImage("PRODUCTS/CALENDULA_OIL.png");
+        sunflowerPRODUCT_IMG = loadImage("PRODUCTS/SUNFLOWER_OIL.png");
+        tomatoPRODUCT_IMG1 = loadImage("PRODUCTS/TOMATO_JUICE.png");
+        tomatoPRODUCT_IMG2 = loadImage("PRODUCTS/TOMATO_SAUCE.png");
+        lemongrassPRODUCT_IMG = loadImage("PRODUCTS/LEMONGRASS_OIL.png");
+        marigoldPRODUCT_IMG = loadImage("PRODUCTS/MARIGOLD_OIL.png");
+        basilPRODUCT_IMG = loadImage("PRODUCTS/BASIL_OIL.png");
+        lavenderPRODUCT_IMG1 = loadImage("PRODUCTS/LAVENDER_OIL.png");
+        lavenderPRODUCT_IMG2 = loadImage("PRODUCTS/LAVENDER_PERFUME.png");
+        lavenderPRODUCT_IMG3 = loadImage("PRODUCTS/LAVENDER_SOAP.png");
+
+        theLAST_IMG = loadImage("images/MOTHER-NATURE.png")
+
    hide(){
      this.button.hide();
      this.readBUTTON.hide();
@@ -225,6 +257,24 @@ class GAME {
      this.Nbutton2.hide();
      this.Mbutton1.hide();
      this.Mbutton2.hide();
+
+     this.harvestBUTTTON1.hide();
+     this.harvestBUTTTON2.hide();
+     this.harvestBUTTTON3.hide();
+     this.harvestBUTTTON4.hide();
+     this.harvestBUTTTON5.hide();
+     this.harvestBUTTTON6.hide();
+     this.harvestBUTTTON7.hide();
+
+     this.productBUTTON1.hide();
+     this.productBUTTON2.hide();
+     this.productBUTTON3.hide();
+     this.productBUTTON4.hide();
+     this.productBUTTON5.hide();
+     this.productBUTTON6.hide();
+     this.productBUTTON7.hide();
+
+     this.resetBUTTON.hide();
 
    }
 
@@ -262,6 +312,24 @@ class GAME {
      this.Mbutton1.show();
      this.Mbutton2.show();
 
+     this.harvestBUTTTON1.show();
+     this.harvestBUTTTON2.show();
+     this.harvestBUTTTON3.show();
+     this.harvestBUTTTON4.show();
+     this.harvestBUTTTON5.show();
+     this.harvestBUTTTON6.show();
+     this.harvestBUTTTON7.show();
+
+     this.productBUTTON1.show();
+     this.productBUTTON2.show();
+     this.productBUTTON3.show();
+     this.productBUTTON4.show();
+     this.productBUTTON5.show();
+     this.productBUTTON6.show();
+     this.productBUTTON7.show();
+
+     this.resetBUTTON.show();
+
    }
 
    story(){
@@ -269,40 +337,8 @@ class GAME {
      // GAMESTATE 0
 
      // TO CREATE THE GIRL SPRITE
-
-      this.CalendulaButton.hide();
-      this.SunflowerButton.hide();
-      this.TomatoButton.hide();
-      this.LemongrassButton.hide();
-      this.MarigoldButton.hide();
-      this.BasilButton.hide();
-      this.LavenderButton.hide();
-      this.impButton.hide();
-      this.vipButton.hide();
-      this.gameC.hide();
-      this.gameS.hide();
-      this.gameT.hide();
-      this.gameL.hide();
-      this.gameM.hide();
-      this.gameB.hide();
-      this.gameLA.hide();
-      
-      this.W4.hide();
-      this.W1.hide();
-     this.W2.hide();
-     this.W3.hide();
-     this.W5.hide();
-     this.waterbutton1.hide();
-     this.waterbutton2.hide();
-     this.NPKbutton1.hide();
-     this.NPKbutton2.hide();
-     this.Nbutton1.hide();
-     this.Nbutton2.hide();
-     this.Mbutton1.hide();
-     this.Mbutton2.hide();
-     
-     this.gameBUTTON.hide();
-     this.readBUTTON.hide();
+      this.hide();
+      this.button.show();   
 
      imageMode(CENTER);
      image(this.GIRL_IMG,displayWidth - 900,displayHeight - 200,400,500);
@@ -347,36 +383,9 @@ class GAME {
 rules(){
 
   // TO HIDE THE BUTTON
-  this.button.hide();
-  this.vipButton.hide();
-  this.CalendulaButton.hide();
-this.SunflowerButton.hide();
-this.TomatoButton.hide();
-this.LemongrassButton.hide();
-this.MarigoldButton.hide();
-this.BasilButton.hide();
-this.LavenderButton.hide();
-this.gameC.hide();
-this.gameS.hide();
-this.gameT.hide();
-this.gameL.hide();
-this.gameM.hide();
-this.gameB.hide();
-
-this.waterbutton1.hide();
-this.waterbutton2.hide();
-this.NPKbutton1.hide();
-this.NPKbutton2.hide();
-this.Nbutton1.hide();
-this.Nbutton2.hide();
-this.Mbutton1.hide();
-this.Mbutton2.hide();
-this.W5.hide();
-this.W4.hide();
-this.gameLA.hide();
-this.W1.hide();
-     this.W2.hide();
-     this.W3.hide();
+   this.hide();
+   this.readBUTTON.show();
+   this.gameBUTTON.show();
   
   // TO CREATE A BOOK BUTTON
 
@@ -439,31 +448,9 @@ this.W1.hide();
 firstpage(){
 
 background("#55d9d4");
-this.gameBUTTON.hide();
-this.readBUTTON.hide();
-this.impButton.hide();
+this.hide();
 this.vipButton.show();
-this.gameC.hide();
-this.gameS.hide();
-this.gameT.hide();
-this.gameL.hide();
-this.gameM.hide();
-this.gameB.hide();
-this.gameLA.hide();
 
-this.waterbutton1.hide();
-this.waterbutton2.hide();
-this.NPKbutton1.hide();
-this.NPKbutton2.hide();
-this.Nbutton1.hide();
-this.Nbutton2.hide();
-this.Mbutton1.hide();
-this.Mbutton2.hide();
-this.W4.hide();
-this.W5.hide();
-this.W1.hide();
-     this.W2.hide();
-     this.W3.hide();
 this.vipButton.position(displayWidth - 200, displayHeight - 100);
 this.vipButton.size(150,40);
 this.vipButton.mousePressed(function(){
@@ -562,35 +549,7 @@ image(this.refCalendula,displayWidth/2, displayHeight/2 + 225,displayWidth/2 - 4
 text("CALENDULA OIL HAS ANTIFUNGAL PROPERTIES.",displayWidth/2 - 300, displayHeight/2 + 380);
 text("IT ALSO HEALS WOUNDS.",displayWidth/2 - 300, displayHeight/2 + 420)
 
-this.CalendulaButton.hide();
-this.SunflowerButton.hide();
-this.TomatoButton.hide();
-this.LemongrassButton.hide();
-this.MarigoldButton.hide();
-this.BasilButton.hide();
-this.LavenderButton.hide();
-this.vipButton.hide();
-this.waterbutton1.hide();
-this.waterbutton2.hide();
-this.NPKbutton1.hide();
-this.NPKbutton2.hide();
-this.Nbutton1.hide();
-this.Nbutton2.hide();
-this.Mbutton1.hide();
-this.Mbutton2.hide();
-
-this.gameS.hide();
-this.gameT.hide();
-this.gameL.hide();
-this.gameM.hide();
-this.gameB.hide();
-this.gameLA.hide();
-this.W5.hide();
-this.W4.hide();
-this.W1.hide();
-     this.W2.hide();
-     this.W3.hide();
-this.gameC.hide();
+this.hide();
 this.impButton.show();
 this.impButton.position(displayWidth - 100, displayHeight - 100);
 this.impButton.size(50,40);
@@ -620,35 +579,7 @@ image(this.refSunflora,displayWidth/2, displayHeight/2 + 200,displayWidth/2 - 20
 text("SUNFLOWER SEEDS ARE VERY HEALTHY. THEY ARE RICH IN VITAMIN E",displayWidth/2 - 300, displayHeight/2 + 350);
 text("THEY ARE GOOD FOR SKIN AND BOOST HEART HEALTH.",displayWidth/2 - 300, displayHeight/2 + 400)
 
-this.CalendulaButton.hide();
-this.SunflowerButton.hide();
-this.TomatoButton.hide();
-this.LemongrassButton.hide();
-this.MarigoldButton.hide();
-this.BasilButton.hide();
-this.LavenderButton.hide();
-this.vipButton.hide();
-this.waterbutton1.hide();
-this.waterbutton2.hide();
-this.NPKbutton1.hide();
-this.NPKbutton2.hide();
-this.Nbutton1.hide();
-this.Nbutton2.hide();
-this.Mbutton1.hide();
-this.Mbutton2.hide();
-
-this.gameS.hide();
-this.gameT.hide();
-this.gameL.hide();
-this.gameM.hide();
-this.gameB.hide();
-this.W5.hide();
-this.W4.hide();
-this.gameLA.hide();
-this.W1.hide();
-     this.W2.hide();
-     this.W3.hide();
-this.gameC.hide();
+this.hide();
 this.impButton.show();
 this.impButton.position(displayWidth - 100, displayHeight - 100);
 this.impButton.size(50,40);
@@ -680,35 +611,7 @@ text("BELOW IS A CHART EXPLAINING THE GROWTH OF TOMATOES.",displayWidth/2 - 300,
 image(this.refTomato,displayWidth/2, displayHeight/2 + 250,displayWidth/2 - 300,displayHeight/3 - 50);
 text("TOMATOES ARE VERY RICH IN VITAMIN C, VITAMIN A, VITAMIN K",displayWidth/2 - 300,displayHeight/2 + 400)
 
-this.CalendulaButton.hide();
-this.SunflowerButton.hide();
-this.TomatoButton.hide();
-this.LemongrassButton.hide();
-this.MarigoldButton.hide();
-this.BasilButton.hide();
-this.LavenderButton.hide();
-this.vipButton.hide();
-this.waterbutton1.hide();
-this.waterbutton2.hide();
-this.NPKbutton1.hide();
-this.NPKbutton2.hide();
-this.Nbutton1.hide();
-this.Nbutton2.hide();
-this.Mbutton1.hide();
-this.Mbutton2.hide();
-
-this.gameS.hide();
-this.gameT.hide();
-this.gameL.hide();
-this.gameM.hide();
-this.gameB.hide();
-this.W4.hide();
-this.W5.hide();
-this.gameLA.hide();
-this.W1.hide();
-     this.W2.hide();
-     this.W3.hide();
-this.gameC.hide();
+this.hide();
 this.impButton.show();
 this.impButton.position(displayWidth - 100, displayHeight - 100);
 this.impButton.size(50,40);
@@ -740,35 +643,7 @@ text("LEMONGRASS TEA IS GOOD FOR HEALTH. IT TREATS COMMON FLU.",displayWidth/2 -
 text("IT IS ALSO GOOD FOR HAIR.LEMONGRASS OIL IS ALSO BENEFICIAL",displayWidth/2 - 300,displayHeight/2 + 160)
 text("LEMONGRASS ALSO REPELS MOSQUITOS.",displayWidth/2 - 300,displayHeight/2 + 210)
 
-this.CalendulaButton.hide();
-this.SunflowerButton.hide();
-this.TomatoButton.hide();
-this.LemongrassButton.hide();
-this.MarigoldButton.hide();
-this.BasilButton.hide();
-this.LavenderButton.hide();
-this.vipButton.hide();
-this.waterbutton1.hide();
-this.waterbutton2.hide();
-this.NPKbutton1.hide();
-this.NPKbutton2.hide();
-this.Nbutton1.hide();
-this.Nbutton2.hide();
-this.Mbutton1.hide();
-this.Mbutton2.hide();
-
-this.gameS.hide();
-this.gameT.hide();
-this.gameL.hide();
-this.gameM.hide();
-this.gameB.hide();
-this.W4.hide();
-this.W5.hide();
-this.gameLA.hide();
-this.W1.hide();
-     this.W2.hide();
-     this.W3.hide();
-this.gameC.hide();
+this.hide();
 this.impButton.show();
 this.impButton.position(displayWidth - 100, displayHeight - 100);
 this.impButton.size(50,40);
@@ -799,35 +674,7 @@ text("THEY ALSO REQUIRE A LITTLE COMPOST.",displayWidth/2 - 300, displayHeight/2
 text("MARIGOLD PROMOTES SKIN HEALING AND IS GOOD FOR EYES.",displayWidth/2 - 300,displayHeight/2 + 110);
 text("IT IS ALSO KEEPS AWAY MANY INSECTS AND PESTS.",displayWidth/2 - 300,displayHeight/2 + 160);
 
-this.CalendulaButton.hide();
-this.SunflowerButton.hide();
-this.TomatoButton.hide();
-this.LemongrassButton.hide();
-this.MarigoldButton.hide();
-this.BasilButton.hide();
-this.LavenderButton.hide();
-this.vipButton.hide();
-this.gameS.hide();
-this.gameT.hide();
-this.gameL.hide();
-this.gameM.hide();
-this.gameB.hide();
-
-this.waterbutton1.hide();
-this.waterbutton2.hide();
-this.NPKbutton1.hide();
-this.NPKbutton2.hide();
-this.Nbutton1.hide();
-this.Nbutton2.hide();
-this.Mbutton1.hide();
-this.Mbutton2.hide();
-this.W4.hide();
-this.W5.hide();
-this.gameLA.hide();
-this.W1.hide();
-     this.W2.hide();
-     this.W3.hide();
-this.gameC.hide();
+this.hide();
 this.impButton.show();
 this.impButton.position(displayWidth - 100, displayHeight - 100);
 this.impButton.size(50,40);
@@ -858,35 +705,7 @@ text("BASIL FIGHTS COMMON COLD AND IS ANTI-FLAMMATORY.",displayWidth/2 - 300, di
 text("IT IS ALSO GOOD FOR SKIN AND DETOXIFIES THE BODY.",displayWidth/2 - 300,displayHeight/2 + 110);
 text("IT IS ALSO USED IN MANY DISHES.",displayWidth/2 - 300,displayHeight/2 + 160);
 
-this.CalendulaButton.hide();
-this.SunflowerButton.hide();
-this.TomatoButton.hide();
-this.LemongrassButton.hide();
-this.MarigoldButton.hide();
-this.BasilButton.hide();
-this.LavenderButton.hide();
-this.vipButton.hide();
-
-this.gameS.hide();
-this.gameT.hide();
-this.gameL.hide();
-this.gameM.hide();
-this.gameB.hide();
-this.waterbutton1.hide();
-this.waterbutton2.hide();
-this.NPKbutton1.hide();
-this.NPKbutton2.hide();
-this.Nbutton1.hide();
-this.Nbutton2.hide();
-this.Mbutton1.hide();
-this.Mbutton2.hide();
-this.W4.hide();
-this.W5.hide();
-this.gameLA.hide();
-this.W1.hide();
-     this.W2.hide();
-     this.W3.hide();
-this.gameC.hide();
+this.hide();
 this.impButton.show();
 this.impButton.position(displayWidth - 100, displayHeight - 100);
 this.impButton.size(50,40);
@@ -920,33 +739,7 @@ text("IT IS USED IN AROMATHERAPHY.IT ALSO REPELS MOSQUITOS.",displayWidth/2 - 30
 text("IT IS ALSO USED IN MANY DISHES.",displayWidth/2 - 300,displayHeight/2 + 210);
 
 
-this.CalendulaButton.hide();
-this.SunflowerButton.hide();
-this.TomatoButton.hide();
-this.LemongrassButton.hide();
-this.MarigoldButton.hide();
-this.BasilButton.hide();
-this.LavenderButton.hide();
-this.vipButton.hide();
-this.gameS.hide();
-this.gameT.hide();
-this.gameL.hide();
-this.gameM.hide();
-this.gameB.hide();
-this.W4.hide();
-this.waterbutton1.hide();
-this.waterbutton2.hide();
-this.NPKbutton1.hide();
-this.NPKbutton2.hide();
-this.Nbutton1.hide();
-this.Nbutton2.hide();
-this.Mbutton1.hide();
-this.Mbutton2.hide();
-this.gameLA.hide();
-this.W5.hide();
-this.W1.hide();
-     this.W2.hide();
-     this.W3.hide();
+this.hide();
 this.gameC.hide();
 this.impButton.show();
 this.impButton.position(displayWidth - 100, displayHeight - 100);
@@ -961,30 +754,7 @@ this.impButton.mousePressed(function(){
 demo(){
 
 background("#AAD9D5");
-this.gameBUTTON.hide();
-this.readBUTTON.hide();
-this.impButton.hide();
-this.CalendulaButton.hide();
-this.SunflowerButton.hide();
-this.TomatoButton.hide();
-this.LemongrassButton.hide();
-this.MarigoldButton.hide();
-this.BasilButton.hide();
-this.W4.hide();
-this.W5.hide();
-
-this.waterbutton1.hide();
-this.waterbutton2.hide();
-this.NPKbutton1.hide();
-this.NPKbutton2.hide();
-this.Nbutton1.hide();
-this.Nbutton2.hide();
-this.Mbutton1.hide();
-this.Mbutton2.hide();
-this.LavenderButton.hide();
-this.W1.hide();
-     this.W2.hide();
-     this.W3.hide();
+this.hide();
 
 fill("black");
 textSize(20)
@@ -1086,39 +856,28 @@ this.vipButton.mousePressed(()=>{
 
 gameCAL(weather1){
 
-     this.gameC.hide();
-     this.gameS.hide();
-     this.gameT.hide();
-     this.gameL.hide();
-     this.gameM.hide();
-     this.gameB.hide();
-     this.gameLA.hide();
-     
+     this.hide();
+
      this.W1.show();
      this.W2.show();
      this.W3.show();
      this.W4.hide();
      this.W5.hide();
-     this.waterbutton1.hide();
-     this.waterbutton2.hide();
-     this.NPKbutton1.hide();
-     this.NPKbutton2.hide();
-     this.Nbutton1.hide();
-     this.Nbutton2.hide();
-     this.Mbutton1.hide();
-     this.Mbutton2.hide();
      this.W1.position(displayWidth/2 - 550,displayHeight/2 + 100);
      this.W1.mousePressed(()=>{
        this.W1.style('background','#ED3835')
+       lives1 -=1
      })
      this.W2.position(displayWidth/2 -50,displayHeight/2 + 100); 
      this.W2.mousePressed(()=>{
       this.W2.style('background','#ED3835')
+      lives1 -=1
     })
      this.W3.position(displayWidth/2 + 450,displayHeight/2 + 100);
      this.W3.mousePressed(()=>{
 
      gameSTATE = 311
+     lives1 +=1
 
      })
      this.W1.size(100,100);
@@ -1132,20 +891,32 @@ gameCAL(weather1){
     textSize(17);
     text("READ ABOUT CALENDULA IN THE BOOK AND ANSWER THE QUESTION",displayWidth/2-300,displayHeight/2 - 300);
     text("WHAT TYPE OF WEATHER AND SOIL DOES CALENDULA GROW IN ?",displayWidth/2-300,displayHeight/2 - 200);
+    text("(CLICK THE RETURN BUTTON TO READ)",displayWidth/2-300,displayHeight/2 - 140);
 
+    imageMode(CENTER)
+    var x = displayWidth/2 - 300;
+  
+    for(var i =0; i<lives1; i++){
+      image(life2,x,displayHeight/2 - 400,100,100);
+      x = x+50;
+    }
 
-
+    this.vipButton.show();
+    this.vipButton.position(displayWidth - 200, displayHeight - 100);
+    this.vipButton.size(150,40);
+    this.vipButton.mousePressed(()=>{
+      gameSTATE = 1;
+      this.W1.style('background','#E5E5E5');
+      this.W2.style('background','#E5E5E5');
+      this.W3.style('background','#E5E5E5');
+      this.W4.style('background','#E5E5E5');
+      this.W5.style('background','#E5E5E5');
+    })
 
   }
 
 gameSUN(weather2){
-  this.gameC.hide();
-  this.gameS.hide();
-  this.gameT.hide();
-  this.gameL.hide();
-  this.gameM.hide();
-  this.gameB.hide();
-  this.gameLA.hide();
+this.hide();
 
   background("#B5B7E6");
   imageMode(CENTER)
@@ -1157,18 +928,9 @@ gameSUN(weather2){
     }
   
   this.W4.show();
-  this.W2.hide();
   this.W3.show();
-  this.W5.hide();
   this.W1.show();
-  this.waterbutton1.hide();
-  this.waterbutton2.hide();
-  this.NPKbutton1.hide();
-  this.NPKbutton2.hide();
-  this.Nbutton1.hide();
-  this.Nbutton2.hide();
-  this.Mbutton1.hide();
-  this.Mbutton2.hide();
+
   this.W1.position(displayWidth/2 - 550,displayHeight/2 + 100);
   this.W1.mousePressed(()=>{
     this.W1.style('background','red');
@@ -1194,30 +956,27 @@ gameSUN(weather2){
     textSize(17);
     text("READ ABOUT SUNFLOWER IN THE BOOK AND ANSWER THE QUESTION",displayWidth/2-300,displayHeight/2 - 300);
     text("WHAT TYPE OF WEATHER AND SOIL DOES SUNFLOWER GROW IN ?",displayWidth/2-300,displayHeight/2 - 200);
+    text("(CLICK THE RETURN BUTTON TO READ)",displayWidth/2-300,displayHeight/2 - 140);
+
+    this.vipButton.show();
+this.vipButton.position(displayWidth - 200, displayHeight - 100);
+this.vipButton.size(150,40);
+this.vipButton.mousePressed(()=>{
+  gameSTATE = 1;
+  this.W1.style('background','#E5E5E5');
+  this.W2.style('background','#E5E5E5');
+  this.W3.style('background','#E5E5E5');
+  this.W4.style('background','#E5E5E5');
+  this.W5.style('background','#E5E5E5');
+})
 
 }
 
 gameTOM(weather3){
-  this.gameC.hide();
-  this.gameS.hide();
-  this.gameT.hide();
-  this.gameL.hide();
-  this.gameM.hide();
-  this.gameB.hide();
-  this.gameLA.hide();
+this.hide();
   
   this.W4.show();
   this.W1.show();
-  this.W2.hide();
-  this.W3.hide();
-  this.waterbutton1.hide();
-  this.waterbutton2.hide();
-  this.NPKbutton1.hide();
-  this.NPKbutton2.hide();
-  this.Nbutton1.hide();
-  this.Nbutton2.hide();
-  this.Mbutton1.hide();
-  this.Mbutton2.hide();
   this.W5.show();
   this.W1.position(displayWidth/2 - 550,displayHeight/2 + 100);
   this.W5.position(displayWidth/2 -50,displayHeight/2 + 100); 
@@ -1225,14 +984,17 @@ gameTOM(weather3){
   this.W1.size(100,100);
   this.W1.mousePressed(()=>{
     this.W1.style('background','red');
+    lives3 -=1
   })
   this.W4.size(100,100);
   this.W4.mousePressed(()=>{
     this.W4.style('background','red');
+    lives3 -=1
   })
   this.W5.size(100,100);
   this.W5.mousePressed(()=>{
     gameSTATE = 331
+    lives3 +=1
   })
   background("#B5B7E6");
     imageMode(CENTER);
@@ -1242,41 +1004,49 @@ gameTOM(weather3){
     textSize(17);
     text("READ ABOUT TOMATO IN THE BOOK AND ANSWER THE QUESTION",displayWidth/2-300,displayHeight/2 - 300);
     text("WHAT TYPE OF WEATHER AND SOIL DOES TOMATO GROW IN ?",displayWidth/2-300,displayHeight/2 - 200);
+    text("(CLICK THE RETURN BUTTON TO READ)",displayWidth/2-300,displayHeight/2 - 140);
+
+    imageMode(CENTER)
+    var x = displayWidth/2 - 300;
+  
+    for(var i =0; i<lives3; i++){
+      image(life2,x,displayHeight/2 - 400,100,100);
+      x = x+50;
+    }
+
+    this.vipButton.show();
+    this.vipButton.position(displayWidth - 200, displayHeight - 100);
+    this.vipButton.size(150,40);
+    this.vipButton.mousePressed(()=>{
+    gameSTATE = 1;
+    this.W1.style('background','#E5E5E5');
+  this.W2.style('background','#E5E5E5');
+  this.W3.style('background','#E5E5E5');
+  this.W4.style('background','#E5E5E5');
+  this.W5.style('background','#E5E5E5');
+})
 
 }
 
 gameLEM(weather4){
-  this.gameC.hide();
-  this.gameS.hide();
-  this.gameT.hide();
-  this.gameL.hide();
-  this.gameM.hide();
-  this.gameB.hide();
-  this.gameLA.hide();
-  this.waterbutton1.hide();
-  this.waterbutton2.hide();
-  this.NPKbutton1.hide();
-  this.NPKbutton2.hide();
-  this.Nbutton1.hide();
-  this.Nbutton2.hide();
-  this.Mbutton1.hide();
-  this.Mbutton2.hide();
+this.hide();
   
   this.W4.show();
   this.W1.show();
-  this.W2.hide();
   this.W3.show();
-  this.W5.hide();
   this.W1.mousePressed(()=>{
     this.W1.style('background','red');
+    lives4 -=1
   })
   this.W3.size(100,100);
   this.W3.mousePressed(()=>{
     this.W3.style('background','red');
+    lives4 -=1
   })
   this.W4.size(100,100);
   this.W4.mousePressed(()=>{
     gameSTATE = 341
+    lives4 +=1
   })
   this.W1.position(displayWidth/2 - 550,displayHeight/2 + 100);
   this.W4.position(displayWidth/2 -50,displayHeight/2 + 100); 
@@ -1292,30 +1062,35 @@ gameLEM(weather4){
     textSize(17);
     text("READ ABOUT LEMONGRASS IN THE BOOK AND ANSWER THE QUESTION",displayWidth/2-300,displayHeight/2 - 300);
     text("WHAT TYPE OF WEATHER AND SOIL DOES LEMONGRASS GROW IN ?",displayWidth/2-300,displayHeight/2 - 200);
+    text("(CLICK THE RETURN BUTTON TO READ)",displayWidth/2-300,displayHeight/2 - 140);
+
+    imageMode(CENTER)
+    var x = displayWidth/2 - 300;
+  
+    for(var i =0; i<lives4; i++){
+      image(life2,x,displayHeight/2 - 400,100,100);
+      x = x+50;
+    }
+
+    this.vipButton.show();
+this.vipButton.position(displayWidth - 200, displayHeight - 100);
+this.vipButton.size(150,40);
+this.vipButton.mousePressed(()=>{
+  gameSTATE = 1;
+  this.W1.style('background','#E5E5E5');
+  this.W2.style('background','#E5E5E5');
+  this.W3.style('background','#E5E5E5');
+  this.W4.style('background','#E5E5E5');
+  this.W5.style('background','#E5E5E5');
+})
 
 }
 
 gameMAR(weather5){
-  this.gameC.hide();
-  this.gameS.hide();
-  this.gameT.hide();
-  this.gameL.hide();
-  this.gameM.hide();
-  this.gameB.hide();
-  this.gameLA.hide();
-  this.waterbutton1.hide();
-  this.waterbutton2.hide();
-  this.NPKbutton1.hide();
-  this.NPKbutton2.hide();
-  this.Nbutton1.hide();
-  this.Nbutton2.hide();
-  this.Mbutton1.hide();
-  this.Mbutton2.hide();
+this.hide();
   
   this.W3.show();
   this.W1.show();
-  this.W2.hide();
-  this.W4.hide();
   this.W5.show();
   this.W1.position(displayWidth/2 - 550,displayHeight/2 + 100);
   this.W5.position(displayWidth/2 -50,displayHeight/2 + 100); 
@@ -1325,14 +1100,17 @@ gameMAR(weather5){
   this.W5.size(100,100);
   this.W1.mousePressed(()=>{
     this.W1.style('background','red');
+    lives5 -=1
   })
   this.W3.size(100,100);
   this.W3.mousePressed(()=>{
     this.W3.style('background','red');
+    lives5 -=1
   })
   this.W5.size(100,100);
   this.W5.mousePressed(()=>{
     gameSTATE = 351;
+    lives5 +=1
   })
   background("#B5B7E6");
     imageMode(CENTER);
@@ -1342,41 +1120,48 @@ gameMAR(weather5){
     textSize(17);
     text("READ ABOUT MARIGOLD IN THE BOOK AND ANSWER THE QUESTION",displayWidth/2-300,displayHeight/2 - 300);
     text("WHAT TYPE OF WEATHER AND SOIL DOES MARIGOLD GROW IN ?",displayWidth/2-300,displayHeight/2 - 200);
+    text("(CLICK THE RETURN BUTTON TO READ)",displayWidth/2-300,displayHeight/2 - 140);
+
+    imageMode(CENTER)
+    var x = displayWidth/2 - 300;
+  
+    for(var i =0; i<lives5; i++){
+      image(life2,x,displayHeight/2 - 400,100,100);
+      x = x+50;
+    }
+
+    this.vipButton.show();
+this.vipButton.position(displayWidth - 200, displayHeight - 100);
+this.vipButton.size(150,40);
+this.vipButton.mousePressed(()=>{
+  gameSTATE = 1;
+  this.W1.style('background','#E5E5E5');
+  this.W2.style('background','#E5E5E5');
+  this.W3.style('background','#E5E5E5');
+  this.W4.style('background','#E5E5E5');
+  this.W5.style('background','#E5E5E5');
+})
 
 }
 
 gameBAS(weather6){
-  this.gameC.hide();
-  this.gameS.hide();
-  this.gameT.hide();
-  this.gameL.hide();
-  this.gameM.hide();
-  this.gameB.hide();
-  this.gameLA.hide();
-  this.waterbutton1.hide();
-  this.waterbutton2.hide();
-  this.NPKbutton1.hide();
-  this.NPKbutton2.hide();
-  this.Nbutton1.hide();
-  this.Nbutton2.hide();
-  this.Mbutton1.hide();
-  this.Mbutton2.hide();
-  
+this.hide();
   this.W4.show();
   this.W1.show();
-  this.W2.hide();
   this.W3.show();
-  this.W5.hide();
   this.W1.mousePressed(()=>{
     this.W1.style('background','red');
+    lives6 -=1
   })
   this.W4.position(displayWidth/2 -50,displayHeight/2 + 100); 
   this.W4.mousePressed(()=>{
     gameSTATE = 361
+    lives6 +=1
   })
   this.W3.position(displayWidth/2 + 450,displayHeight/2 + 100);
   this.W3.mousePressed(()=>{
     this.W3.style('background','red');
+    lives6 -=1
   })
   this.W1.position(displayWidth/2 - 550,displayHeight/2 + 100);
   this.W4.position(displayWidth/2 -50,displayHeight/2 + 100); 
@@ -1392,43 +1177,51 @@ gameBAS(weather6){
     textSize(17);
     text("READ ABOUT BASIL IN THE BOOK AND ANSWER THE QUESTION",displayWidth/2-300,displayHeight/2 - 300);
     text("WHAT TYPE OF WEATHER AND SOIL DOES BASIL GROW IN ?",displayWidth/2-300,displayHeight/2 - 200);
+    text("(CLICK THE RETURN BUTTON TO READ)",displayWidth/2-300,displayHeight/2 - 140);
+
+    imageMode(CENTER)
+    var x = displayWidth/2 - 300;
+  
+    for(var i =0; i<lives6; i++){
+      image(life2,x,displayHeight/2 - 400,100,100);
+      x = x+50;
+    }
+
+    this.vipButton.show();
+this.vipButton.position(displayWidth - 200, displayHeight - 100);
+this.vipButton.size(150,40);
+this.vipButton.mousePressed(()=>{
+  gameSTATE = 1;
+  this.W1.style('background','#E5E5E5');
+  this.W2.style('background','#E5E5E5');
+  this.W3.style('background','#E5E5E5');
+  this.W4.style('background','#E5E5E5');
+  this.W5.style('background','#E5E5E5');
+})
 
 }
 gameLAV(weather7){
-  this.gameC.hide();
-  this.gameS.hide();
-  this.gameT.hide();
-  this.gameL.hide();
-  this.gameM.hide();
-  this.gameB.hide();
-  this.gameLA.hide();
-  this.waterbutton1.hide();
-  this.waterbutton2.hide();
-  this.NPKbutton1.hide();
-  this.NPKbutton2.hide();
-  this.Nbutton1.hide();
-  this.Nbutton2.hide();
-  this.Mbutton1.hide();
-  this.Mbutton2.hide();
+this.hide();
   
   this.W3.show();
   this.W1.show();
-  this.W2.hide();
-  this.W4.hide();
   this.W5.show();
   this.W1.position(displayWidth/2 - 550,displayHeight/2 + 100);
   this.W5.position(displayWidth/2 -50,displayHeight/2 + 100); 
   this.W3.position(displayWidth/2 + 450,displayHeight/2 + 100);
   this.W1.mousePressed(()=>{
     gameSTATE = 371;
+    lives7 +=1
   })
   this.W5.position(displayWidth/2 -50,displayHeight/2 + 100); 
   this.W5.mousePressed(()=>{
     this.W5.style('background','red');
+    lives7 -=1
   })
   this.W3.position(displayWidth/2 + 450,displayHeight/2 + 100);
   this.W3.mousePressed(()=>{
     this.W3.style('background','red');
+    lives7 -=1
   })
   this.W1.size(100,100);
   this.W3.size(100,100);
@@ -1441,42 +1234,34 @@ gameLAV(weather7){
     textSize(17);
     text("READ ABOUT LAVENDER IN THE BOOK AND ANSWER THE QUESTION",displayWidth/2-300,displayHeight/2 - 300);
     text("WHAT TYPE OF WEATHER AND SOIL DOES LAVENDER GROW IN ?",displayWidth/2-300,displayHeight/2 - 200);
+    text("(CLICK THE RETURN BUTTON TO READ)",displayWidth/2-300,displayHeight/2 - 140);
+
+    imageMode(CENTER)
+    var x = displayWidth/2 - 300;
+  
+    for(var i =0; i<lives7; i++){
+      image(life2,x,displayHeight/2 - 400,100,100);
+      x = x+50;
+    }
+
+    this.vipButton.show();
+this.vipButton.position(displayWidth - 200, displayHeight - 100);
+this.vipButton.size(150,40);
+this.vipButton.mousePressed(()=>{
+  gameSTATE = 1;
+  this.W1.style('background','#E5E5E5');
+  this.W2.style('background','#E5E5E5');
+  this.W3.style('background','#E5E5E5');
+  this.W4.style('background','#E5E5E5');
+  this.W5.style('background','#E5E5E5');
+})
 
 }
 
  flower1(){
-  this.button.hide();
-  this.readBUTTON.hide();
-  this.gameBUTTON.hide();
-  this.CalendulaButton.hide();
-  this.SunflowerButton.hide();
-  this.TomatoButton.hide();
-  this.LemongrassButton.hide();
-  this.MarigoldButton.hide();
-  this.BasilButton.hide();
-  this.LavenderButton.hide();
-  this.impButton.hide();
-  this.vipButton.hide();
-  this.gameC.hide();
-  this.gameS.hide();
-  this.gameT.hide();
-  this.gameL.hide();
-  this.gameM.hide();
-  this.gameB.hide();
-  this.gameLA.hide();
+ this.hide();
   this.waterbutton1.show();
   this.waterbutton2.show();
-  this.NPKbutton1.hide();
-  this.NPKbutton2.hide();
-  this.Nbutton1.hide();
-  this.Nbutton2.hide();
-  this.Mbutton1.hide();
-  this.Mbutton2.hide();
-  this.W1.hide();
-  this.W2.hide();
-  this.W3.hide();
-  this.W4.hide();
-  this.W5.hide();
 
   imageMode(CENTER);
   image(this.Cstage1,displayWidth/2,displayHeight/2,displayWidth,displayHeight)
@@ -1534,51 +1319,23 @@ textSize(17);
  image(this.watering,displayWidth/2-600,displayHeight/2,100,100);
  textSize(30);
  text(":" + water1,displayWidth/2 - 550,displayHeight/2+25);
+
+ imageMode(CENTER)
+ var x = displayWidth/2 - 300;
+
+ for(var i =0; i<lives1; i++){
+   image(life2,x,displayHeight/2 - 400,100,100);
+   x = x+50;
+ }
    
  }
 
  flower2(){
-  this.button.hide();
-  this.readBUTTON.hide();
-  this.gameBUTTON.hide();
-  this.CalendulaButton.hide();
-  this.SunflowerButton.hide();
-  this.TomatoButton.hide();
-  this.LemongrassButton.hide();
-  this.MarigoldButton.hide();
-  this.BasilButton.hide();
-  this.LavenderButton.hide();
-  this.impButton.hide();
-  this.vipButton.hide();
-  this.gameC.hide();
-  this.gameS.hide();
-  this.gameT.hide();
-  this.gameL.hide();
-  this.gameM.hide();
-  this.gameB.hide();
-  this.gameLA.hide();
-  this.W1.hide();
-  this.W2.hide();
-  this.W3.hide();
-  this.W4.hide();
-  this.W5.hide();
+  this.hide();
   this.waterbutton1.show();
   this.waterbutton2.show();
-  this.NPKbutton1.hide();
-  this.NPKbutton2.hide();
-  this.Nbutton1.hide();
-  this.Nbutton2.hide();
-  this.Mbutton1.hide();
-  this.Mbutton2.hide();
    imageMode(CENTER);
    image(this.stage1,displayWidth/2,displayHeight/2,displayWidth,displayHeight)
-   imageMode(CENTER)
-   var x = displayWidth/2 - 300;
- 
-   for(var i =0; i<lives; i++){
-     image(life2,x,displayHeight/2 - 400,100,100);
-     x = x+50;
-   }
    textSize(20);
    text("YOU HAVE TO WATER 5 TIMES",displayWidth/2-200,displayHeight/2 - 400)
    this.waterbutton1.position(displayWidth/2-600,displayHeight/2+100);
@@ -1640,37 +1397,22 @@ textSize(17);
   textSize(30);
   text(":" + water2,displayWidth/2 - 550,displayHeight/2+25);
 
+  imageMode(CENTER)
+  var x = displayWidth/2 - 300;
+
+  for(var i =0; i<lives; i++){
+    image(life2,x,displayHeight/2 - 400,100,100);
+    x = x+50;
+  }
+
  }
 
  flower3(){
-  this.button.hide();
-  this.readBUTTON.hide();
-  this.gameBUTTON.hide();
-  this.CalendulaButton.hide();
-  this.SunflowerButton.hide();
-  this.TomatoButton.hide();
-  this.LemongrassButton.hide();
-  this.MarigoldButton.hide();
-  this.BasilButton.hide();
-  this.LavenderButton.hide();
-  this.impButton.hide();
-  this.vipButton.hide();
-  this.gameC.hide();
-  this.gameS.hide();
-  this.gameT.hide();
-  this.gameL.hide();
-  this.gameM.hide();
-  this.gameB.hide();
-  this.gameLA.hide();
+this.hide();
   this.waterbutton1.show();
   this.waterbutton2.show();
   this.NPKbutton1.show();
   this.NPKbutton2.show();
-  this.W1.hide();
-  this.W2.hide();
-  this.W3.hide();
-  this.W4.hide();
-  this.W5.hide();
   imageMode(CENTER);
   image(this.Tstage1,displayWidth/2,displayHeight/2,displayWidth,displayHeight)
 
@@ -1763,37 +1505,22 @@ textSize(17);
    }
  })
 
+ imageMode(CENTER)
+ var x = displayWidth/2 - 300;
+
+ for(var i =0; i<lives3; i++){
+   image(life2,x,displayHeight/2 - 400,100,100);
+   x = x+50;
+ }
+
  }
 
  flower4(){
-  this.button.hide();
-  this.readBUTTON.hide();
-  this.gameBUTTON.hide();
-  this.CalendulaButton.hide();
-  this.SunflowerButton.hide();
-  this.TomatoButton.hide();
-  this.LemongrassButton.hide();
-  this.MarigoldButton.hide();
-  this.BasilButton.hide();
-  this.LavenderButton.hide();
-  this.impButton.hide();
-  this.vipButton.hide();
+this.hide();
   this.waterbutton1.show();
   this.waterbutton2.show();
   this.Nbutton1.show();
   this.Nbutton2.show();
-  this.gameC.hide();
-  this.gameS.hide();
-  this.gameT.hide();
-  this.gameL.hide();
-  this.gameM.hide();
-  this.gameB.hide();
-  this.gameLA.hide();
-  this.W1.hide();
-  this.W2.hide();
-  this.W3.hide();
-  this.W4.hide();
-  this.W5.hide();
   imageMode(CENTER);
   image(this.Lestage1,displayWidth/2,displayHeight/2,displayWidth,displayHeight)
 
@@ -1880,37 +1607,22 @@ textSize(17);
    }
  })
 
+ imageMode(CENTER)
+ var x = displayWidth/2 - 300;
+
+ for(var i =0; i<lives4; i++){
+   image(life2,x,displayHeight/2 - 400,100,100);
+   x = x+50;
+ }
+
  }
 
  flower5(){
-  this.button.hide();
-  this.readBUTTON.hide();
-  this.gameBUTTON.hide();
-  this.CalendulaButton.hide();
-  this.SunflowerButton.hide();
-  this.TomatoButton.hide();
-  this.LemongrassButton.hide();
-  this.MarigoldButton.hide();
-  this.BasilButton.hide();
-  this.LavenderButton.hide();
-  this.impButton.hide();
-  this.vipButton.hide();
+this.hide();
   this.waterbutton1.show();
   this.waterbutton2.show();
   this.Nbutton1.show();
   this.Nbutton2.show();
-  this.gameC.hide();
-  this.gameS.hide();
-  this.gameT.hide();
-  this.gameL.hide();
-  this.gameM.hide();
-  this.gameB.hide();
-  this.gameLA.hide();
-  this.W1.hide();
-  this.W2.hide();
-  this.W3.hide();
-  this.W4.hide();
-  this.W5.hide();
   imageMode(CENTER);
   image(this.Mstage1,displayWidth/2,displayHeight/2,displayWidth,displayHeight)
 
@@ -2003,37 +1715,22 @@ textSize(17);
    }
  })
 
+ imageMode(CENTER)
+ var x = displayWidth/2 - 300;
+
+ for(var i =0; i<lives5; i++){
+   image(life2,x,displayHeight/2 - 400,100,100);
+   x = x+50;
+ }
+
  }
 
  flower6(){
-  this.button.hide();
-  this.readBUTTON.hide();
-  this.gameBUTTON.hide();
-  this.CalendulaButton.hide();
-  this.SunflowerButton.hide();
-  this.TomatoButton.hide();
-  this.LemongrassButton.hide();
-  this.MarigoldButton.hide();
-  this.BasilButton.hide();
-  this.LavenderButton.hide();
-  this.impButton.hide();
-  this.vipButton.hide();
+this.hide();
   this.waterbutton1.show();
   this.waterbutton2.show();
   this.Mbutton1.show();
   this.Mbutton2.show();
-  this.gameC.hide();
-  this.gameS.hide();
-  this.gameT.hide();
-  this.gameL.hide();
-  this.gameM.hide();
-  this.gameB.hide();
-  this.gameLA.hide();
-  this.W1.hide();
-  this.W2.hide();
-  this.W3.hide();
-  this.W4.hide();
-  this.W5.hide();
   imageMode(CENTER);
   image(this.Bstage1,displayWidth/2,displayHeight/2,displayWidth,displayHeight)
 
@@ -2114,38 +1811,23 @@ textSize(17);
    }
  })
 
+ imageMode(CENTER)
+ var x = displayWidth/2 - 300;
+
+ for(var i =0; i<lives6; i++){
+   image(life2,x,displayHeight/2 - 400,100,100);
+   x = x+50;
+ }
+
    
  }
 
  flower7(){
-  this.button.hide();
-  this.readBUTTON.hide();
-  this.gameBUTTON.hide();
-  this.CalendulaButton.hide();
-  this.SunflowerButton.hide();
-  this.TomatoButton.hide();
-  this.LemongrassButton.hide();
-  this.MarigoldButton.hide();
-  this.BasilButton.hide();
-  this.LavenderButton.hide();
-  this.impButton.hide();
-  this.vipButton.hide();
+this.hide();
   this.waterbutton1.show();
   this.waterbutton2.show();
   this.Mbutton1.show();
   this.Mbutton2.show();
-  this.gameC.hide();
-  this.gameS.hide();
-  this.gameT.hide();
-  this.gameL.hide();
-  this.gameM.hide();
-  this.gameB.hide();
-  this.gameLA.hide();
-  this.W1.hide();
-  this.W2.hide();
-  this.W3.hide();
-  this.W4.hide();
-  this.W5.hide();
   imageMode(CENTER);
   image(this.Lstage1,displayWidth/2,displayHeight/2,displayWidth,displayHeight)
 
@@ -2238,77 +1920,824 @@ textSize(17);
    }
  })
 
+ imageMode(CENTER)
+ var x = displayWidth/2 - 300;
+
+ for(var i =0; i<lives7; i++){
+   image(life2,x,displayHeight/2 - 400,100,100);
+   x = x+50;
+ }
+
  }
 
  SUNFLOWER_HARVESTING(){
   background("pink")
   imageMode(CENTER);
-  image(this.miniSUNFLOWER_IMG,displayWidth/2 - 400,displayHeight/2-400,100,100);
+  image(this.miniSUNFLOWER_IMG,displayWidth/2 - 400,displayHeight/2-400,displayWidth-1340,displayHeight-800);
   textSize(38);
   text(":" + sunflowers,displayWidth/2 - 350,displayHeight/2 - 400);
-  this.hide();
+ this.hide();
+  this.harvestBUTTTON2.show();
+
+  if(sunflowers < 7){
+  this.harvestBUTTTON2.mousePressed(function(){
+    sunflowers = sunflowers + 7
+  })
+}
+
+if(sunflowers === 7){
+
+  textSize(17)
+  text("YOU HAVE HARVESTED THE SUNFLOWER PLANT SUCCESSFULLY",displayWidth/2-250,displayHeight/2-250);
+  text("CLICK THE NEXT BUTTON TO PROCESS IT INTO A PRODUCT",displayWidth/2-250,displayHeight/2-200);
+  this.button.show();
+  this.harvestBUTTTON2.hide();
+  this.button.mousePressed(function(){
+    gameSTATE = "sunflowerFINAL";
+  })
+}
+  this.harvestBUTTTON2.position(displayWidth/2 - 500,displayHeight/2 -300)
 
  }
 
  CALENDULA_HARVESTING(){
   background("pink")
   imageMode(CENTER);
-  image(this.miniCALENDULA_IMG,displayWidth/2 - 400,displayHeight/2-400,100,100);
+  image(this.miniCALENDULA_IMG,displayWidth/2 - 400,displayHeight/2-400,displayWidth-1340,displayHeight-800);
   textSize(38);
   text(":" + calendulas,displayWidth/2 - 350,displayHeight/2 - 400);
   this.hide();
+  this.harvestBUTTTON1.show();
+
+  if(calendulas < 5){
+    this.harvestBUTTTON1.mousePressed(function(){
+      calendulas = calendulas + 5
+    })
+  }
+  
+  if(calendulas === 5){
+  
+    textSize(17)
+    text("YOU HAVE HARVESTED THE CALENDULA PLANT SUCCESSFULLY",displayWidth/2-250,displayHeight/2-250);
+    text("CLICK THE NEXT BUTTON TO PROCESS IT INTO A PRODUCT",displayWidth/2-250,displayHeight/2-200);
+    this.button.show();
+    this.harvestBUTTTON1.hide();
+    this.button.mousePressed(function(){
+      gameSTATE = "calendulaFINAL";
+    })
+  }
+  this.harvestBUTTTON1.position(displayWidth/2 - 500,displayHeight/2 -300)
 
  }
 
  TOMATO_HARVESTING(){
   background("pink")
   imageMode(CENTER);
-  image(this.miniTOMATO_IMG,displayWidth/2 - 400,displayHeight/2-400,100,100);
+  image(this.miniTOMATO_IMG,displayWidth/2 - 400,displayHeight/2-400,displayWidth-1340,displayHeight-800);
   textSize(38);
   text(":" + tomatoes,displayWidth/2 - 350,displayHeight/2 - 400);
   this.hide();
+  this.harvestBUTTTON3.show();
+  
+  if(tomatoes < 18){
+    this.harvestBUTTTON3.mousePressed(function(){
+      tomatoes = tomatoes + 18
+    })
+  }
+  
+  if(tomatoes === 18){
+  
+    textSize(17)
+    text("YOU HAVE HARVESTED THE TOMATO PLANT SUCCESSFULLY",displayWidth/2-250,displayHeight/2-250);
+    text("CLICK THE NEXT BUTTON TO PROCESS IT INTO A PRODUCT",displayWidth/2-250,displayHeight/2-200);
+    this.button.show();
+    this.harvestBUTTTON3.hide();
+    this.button.mousePressed(function(){
+      gameSTATE = "tomatoFINAL";
+    })
+  }
+  this.harvestBUTTTON3.position(displayWidth/2 - 500,displayHeight/2 -300)
 
  }
 
  LEMONGRASS_HARVESTING(){
   background("pink")
   imageMode(CENTER);
-  image(this.miniLEMONGRASS_IMG,displayWidth/2 - 400,displayHeight/2-400,100,100);
+  image(this.miniLEMONGRASS_IMG,displayWidth/2 - 400,displayHeight/2-400,displayWidth-1340,displayHeight-800);
   textSize(38);
-  text(":" + lemongrasses + "  GRAMS",displayWidth/2 - 350,displayHeight/2 - 400);
+  text(":" + lemongrasses + " GRAMS",displayWidth/2 - 350,displayHeight/2 - 400);
   this.hide();
+  this.harvestBUTTTON4.show();
+  if(lemongrasses < 500){
+    this.harvestBUTTTON4.mousePressed(function(){
+      lemongrasses = lemongrasses + 500
+    })
+  }
+  
+  if(lemongrasses === 500){
+  
+    textSize(17)
+    text("YOU HAVE HARVESTED THE LEMONGRASS PLANT SUCCESSFULLY",displayWidth/2-250,displayHeight/2-250);
+    text("CLICK THE NEXT BUTTON TO PROCESS IT INTO A PRODUCT",displayWidth/2-250,displayHeight/2-200);
+    this.button.show();
+    this.harvestBUTTTON4.hide();
+    this.button.mousePressed(function(){
+      gameSTATE = "lemongrassFINAL";
+    })
+  }
+  this.harvestBUTTTON4.position(displayWidth/2 - 500,displayHeight/2 -300)
 
  }
 
  MARIGOLD_HARVESTING(){
   background("pink")
   imageMode(CENTER);
-  image(this.miniMARIGOLD_IMG,displayWidth/2 - 400,displayHeight/2-400,100,100);
+  image(this.miniMARIGOLD_IMG,displayWidth/2 - 400,displayHeight/2-400,displayWidth-1340,displayHeight-800);
   textSize(38);
   text(":" + marigolds,displayWidth/2 - 350,displayHeight/2 - 400);
   this.hide();
+  this.harvestBUTTTON5.show();
+  if(marigolds < 7){
+    this.harvestBUTTTON5.mousePressed(function(){
+      marigolds = marigolds + 7
+    })
+  }
+  
+  if(marigolds === 7){
+  
+    textSize(17)
+    text("YOU HAVE HARVESTED THE MARIGOLD PLANT SUCCESSFULLY",displayWidth/2-250,displayHeight/2-250);
+    text("CLICK THE NEXT BUTTON TO PROCESS IT INTO A PRODUCT",displayWidth/2-250,displayHeight/2-200);
+    this.button.show();
+    this.harvestBUTTTON5.hide();
+    this.button.mousePressed(function(){
+      gameSTATE = "marigoldFINAL";
+    })
+  }
+  this.harvestBUTTTON5.position(displayWidth/2 - 500,displayHeight/2 -300)
 
  }
 
  BASIL_HARVESTING(){
   background("pink")
   imageMode(CENTER);
-  image(this.miniBASIL_IMG,displayWidth/2 - 400,displayHeight/2-400,100,100);
+  image(this.miniBASIL_IMG,displayWidth/2 - 400,displayHeight/2-400,displayWidth-1340,displayHeight-800);
   textSize(38);
-  text(":" + basils + "  GRAMS",displayWidth/2 - 350,displayHeight/2 - 400);
+  text(":" + basils + "  GRAMS",displayWidth/2 - 350,displayHeight/2 - 400);  this.button.hide();
   this.hide();
+  this.harvestBUTTTON6.show();
+  if(basils < 500){
+    this.harvestBUTTTON6.mousePressed(function(){
+      basils = basils + 500
+    })
+  }
+  
+  if(basils === 500){
+  
+    textSize(17)
+    text("YOU HAVE HARVESTED THE BASIL PLANT SUCCESSFULLY",displayWidth/2-250,displayHeight/2-250);
+    text("CLICK THE NEXT BUTTON TO PROCESS IT INTO A PRODUCT",displayWidth/2-250,displayHeight/2-200);
+    this.button.show();
+    this.harvestBUTTTON6.hide();
+    this.button.mousePressed(function(){
+      gameSTATE = "basilFINAL";
+    })
+  }
+  this.harvestBUTTTON6.position(displayWidth/2 - 500,displayHeight/2 -300)
 
  }
 
  LAVENDER_HARVESTING(){
   background("pink")
   imageMode(CENTER);
-  image(this.miniLAVENDER_IMG,displayWidth/2 - 400,displayHeight/2-400,100,100);
+  image(this.miniLAVENDER_IMG,displayWidth/2 - 400,displayHeight/2-400,displayWidth-1340,displayHeight-800);
   textSize(38);
   text(":" + lavenders + "  GRAMS",displayWidth/2 - 350,displayHeight/2 - 400);
   this.hide();
+  this.harvestBUTTTON7.show();
+  if(lavenders < 650){
+    this.harvestBUTTTON7.mousePressed(function(){
+      lavenders = lavenders + 650
+    })
+  }
+  
+  if(lavenders === 650){
+  
+    textSize(17)
+    text("YOU HAVE HARVESTED THE LAVENDER PLANT SUCCESSFULLY",displayWidth/2-250,displayHeight/2-250);
+    text("CLICK THE NEXT BUTTON TO PROCESS IT INTO A PRODUCT",displayWidth/2-250,displayHeight/2-200);
+    this.button.show();
+    this.button.mousePressed(function(){
+      gameSTATE = "lavenderFINAL";
+    })
+  }
+  this.harvestBUTTTON7.position(displayWidth/2 - 500,displayHeight/2 -300)
 
  }
+
+ calendulaLAST(){
+  this.hide();
+  imageMode(CENTER);
+  image(this.miniCALENDULA_IMG,displayWidth/2 - 400,displayHeight/2-400,displayWidth-1340,displayHeight-800);
+  textSize(38);
+  text(":" + calendulas,displayWidth/2 - 350,displayHeight/2 - 400);
+  this.productBUTTON1.show();
+  this.productBUTTON1.position(displayWidth/2 - 300,displayHeight/2 - 100);
+  if(i1 <1  )
+  this.productBUTTON1.mousePressed(()=>{
+    i1=i1+1
+  })
+
+  if(i1 === 1){
+    imageMode(CENTER);
+    image(this.theLAST_IMG,displayWidth/2+200,displayHeight/2 -150);
+    image(this.calendulaPRODUCT_IMG,displayWidth/2-300,displayHeight/2-100,displayWidth/2-450,displayHeight/2-300);
+    this.productBUTTON1.hide();
+    textSize(17)
+    fill("#E65C90");
+    text("YOU HAVE USED THE HARVESTED CALENDULA TO PROCESS IT INTO",displayWidth/2-250,displayHeight/2+50);
+    text("CALENDULA OIL. THE BENEFITS OF GROWING YOUR OWN PLANTS ARE MANY.",displayWidth/2-250,displayHeight/2+100);
+    text("PLEASE GROW YOUR OWN PLANTS AT HOME TO HELP THE ENVIRONMENT",displayWidth/2-250,displayHeight/2+150);
+    text("WITH THE KNOWLEDGE YOU HAVE GAINED. CLICK THE RESTART BUTTON TO",displayWidth/2-250,displayHeight/2+200);
+    text("PLAY THE GAME AGAIN.",displayWidth/2-250,displayHeight/2+250);
+    this.resetBUTTON.show();
+    this.resetBUTTON.position(displayWidth - 300, displayHeight - 70);
+    this.resetBUTTON.mousePressed(()=>{
+      gameSTATE = 0
+      npk1 = 25;
+      n1 = 25;
+      n2 = 25;
+      manure1 = 25;
+      manure2 = 25;
+      water1 = 50;
+      water2 = 50;
+      water3 = 50;
+      water4 = 50;
+      water5 = 50;
+      water6 = 50;
+      water7 = 50;
+      sunflower_water = 0;
+      calendula_water = 0;
+      tomato_water = 0;
+      lemongrass_water = 0;
+      marigold_water = 0;
+      basil_water = 0;
+      lavender_water = 0;
+      tomato_npk = 0;
+      lemongrass_n2 = 0;
+      marigold_n2 = 0;
+      basil_om = 0;
+      lavender_om = 0;
+
+      this.W1.style('background','#E5E5E5');
+      this.W2.style('background','#E5E5E5');
+      this.W3.style('background','#E5E5E5');
+      this.W4.style('background','#E5E5E5');
+      this.W5.style('background','#E5E5E5');
+
+     lives = 2;
+     lives1 = 2;
+     lives3 = 2;
+     lives4 = 2;
+     lives5 = 2;
+     lives6 = 2;
+     lives7 = 2;
+     sunflowers = 0;
+     calendulas = 0;
+     tomatoes = 0;
+     lemongrasses = 0;
+     marigolds = 0;
+     basils = 0;
+     lavenders = 0;
+     i1 = 0;
+     i2 = 0;
+     i3 = 0;
+     i4 = 0;
+     i5 = 0;
+     i6 = 0;
+     i7 = 0;
+    })
+  }
+
+ }
+
+ sunflowerLAST(){
+  this.hide();
+  imageMode(CENTER);
+  image(this.miniSUNFLOWER_IMG,displayWidth/2 - 400,displayHeight/2-400,displayWidth-1340,displayHeight-800);
+  textSize(38);
+  text(":" + sunflowers,displayWidth/2 - 350,displayHeight/2 - 400);
+  this.productBUTTON2.show();
+  this.productBUTTON2.position(displayWidth/2 - 300,displayHeight/2 - 100);
+  if(i2 <1  )
+  this.productBUTTON2.mousePressed(()=>{
+    i2=i2+1
+  })
+
+  if(i2 === 1){
+    imageMode(CENTER);
+    image(this.theLAST_IMG,displayWidth/2+200,displayHeight/2 -150);
+    image(this.sunflowerPRODUCT_IMG,displayWidth/2-300,displayHeight/2-100,displayWidth/2-400,displayHeight/2-300);
+    this.productBUTTON2.hide();
+    textSize(17)
+    fill("#E65C90");
+    text("YOU HAVE USED THE HARVESTED SUNFLOWER TO PROCESS IT INTO",displayWidth/2-250,displayHeight/2+50);
+    text("SUNFLOWER OIL. THE BENEFITS OF GROWING YOUR OWN PLANTS ARE MANY.",displayWidth/2-250,displayHeight/2+100);
+    text("PLEASE GROW YOUR OWN PLANTS AT HOME TO HELP THE ENVIRONMENT",displayWidth/2-250,displayHeight/2+150);
+    text("WITH THE KNOWLEDGE YOU HAVE GAINED. CLICK THE RESTART BUTTON TO",displayWidth/2-250,displayHeight/2+200);
+    text("PLAY THE GAME AGAIN.",displayWidth/2-250,displayHeight/2+250);
+    this.resetBUTTON.show();
+    this.resetBUTTON.position(displayWidth - 300, displayHeight - 70);
+    this.resetBUTTON.mousePressed(()=>{
+      gameSTATE = 0
+      npk1 = 25;
+      n1 = 25;
+      n2 = 25;
+      manure1 = 25;
+      manure2 = 25;
+      water1 = 50;
+      water2 = 50;
+      water3 = 50;
+      water4 = 50;
+      water5 = 50;
+      water6 = 50;
+      water7 = 50;
+      sunflower_water = 0;
+      calendula_water = 0;
+      tomato_water = 0;
+      lemongrass_water = 0;
+      marigold_water = 0;
+      basil_water = 0;
+      lavender_water = 0;
+      tomato_npk = 0;
+      lemongrass_n2 = 0;
+      marigold_n2 = 0;
+      basil_om = 0;
+      lavender_om = 0;
+
+      this.W1.style('background','#E5E5E5');
+      this.W2.style('background','#E5E5E5');
+      this.W3.style('background','#E5E5E5');
+      this.W4.style('background','#E5E5E5');
+      this.W5.style('background','#E5E5E5');
+
+     lives = 2;
+     lives1 = 2;
+     lives3 = 2;
+     lives4 = 2;
+     lives5 = 2;
+     lives6 = 2;
+     lives7 = 2;
+     sunflowers = 0;
+     calendulas = 0;
+     tomatoes = 0;
+     lemongrasses = 0;
+     marigolds = 0;
+     basils = 0;
+     lavenders = 0;
+     i1 = 0;
+     i2 = 0;
+     i3 = 0;
+     i4 = 0;
+     i5 = 0;
+     i6 = 0;
+     i7 = 0;
+    })
+  }
+
+ }
+
+ tomatoLAST(){
+  this.hide();
+  imageMode(CENTER);
+  image(this.miniTOMATO_IMG,displayWidth/2 - 400,displayHeight/2-400,displayWidth-1340,displayHeight-800);
+  textSize(38);
+  text(":" + tomatoes,displayWidth/2 - 350,displayHeight/2 - 400);
+  this.productBUTTON3.show();
+  this.productBUTTON3.position(displayWidth/2 - 300,displayHeight/2 - 100);
+  if(i3 <1  )
+  this.productBUTTON3.mousePressed(()=>{
+    i3=i3+1
+  })
+
+  if(i3 === 1){
+    imageMode(CENTER);
+    image(this.theLAST_IMG,displayWidth/2+200,displayHeight/2 -150);
+    image(this.tomatoPRODUCT_IMG1,displayWidth/2-300,displayHeight/2-100,displayWidth/2-500,displayHeight/2-300);
+    image(this.tomatoPRODUCT_IMG2,displayWidth/2-100,displayHeight/2-100,displayWidth/2-450,displayHeight/2-300);
+    this.productBUTTON3.hide();
+    textSize(17)
+    fill("#E65C90");
+    text("YOU HAVE USED THE HARVESTED TOMATO TO PROCESS IT INTO",displayWidth/2-250,displayHeight/2+50);
+    text("TOMATO JUICE AND TOMATO SAUCE. THE BENEFITS OF GROWING YOUR OWN PLANTS ARE MANY.",displayWidth/2-250,displayHeight/2+100);
+    text("PLEASE GROW YOUR OWN PLANTS AT HOME TO HELP THE ENVIRONMENT",displayWidth/2-250,displayHeight/2+150);
+    text("WITH THE KNOWLEDGE YOU HAVE GAINED. CLICK THE RESTART BUTTON TO",displayWidth/2-250,displayHeight/2+200);
+    text("PLAY THE GAME AGAIN.",displayWidth/2-250,displayHeight/2+250);
+    this.resetBUTTON.show();
+    this.resetBUTTON.position(displayWidth - 300, displayHeight - 70);
+    this.resetBUTTON.mousePressed(()=>{
+      gameSTATE = 0
+      npk1 = 25;
+      n1 = 25;
+      n2 = 25;
+      manure1 = 25;
+      manure2 = 25;
+      water1 = 50;
+      water2 = 50;
+      water3 = 50;
+      water4 = 50;
+      water5 = 50;
+      water6 = 50;
+      water7 = 50;
+      sunflower_water = 0;
+      calendula_water = 0;
+      tomato_water = 0;
+      lemongrass_water = 0;
+      marigold_water = 0;
+      basil_water = 0;
+      lavender_water = 0;
+      tomato_npk = 0;
+      lemongrass_n2 = 0;
+      marigold_n2 = 0;
+      basil_om = 0;
+      lavender_om = 0;
+
+      this.W1.style('background','#E5E5E5');
+      this.W2.style('background','#E5E5E5');
+      this.W3.style('background','#E5E5E5');
+      this.W4.style('background','#E5E5E5');
+      this.W5.style('background','#E5E5E5');
+
+     lives = 2;
+     lives1 = 2;
+     lives3 = 2;
+     lives4 = 2;
+     lives5 = 2;
+     lives6 = 2;
+     lives7 = 2;
+     sunflowers = 0;
+     calendulas = 0;
+     tomatoes = 0;
+     lemongrasses = 0;
+     marigolds = 0;
+     basils = 0;
+     lavenders = 0;
+     i1 = 0;
+     i2 = 0;
+     i3 = 0;
+     i4 = 0;
+     i5 = 0;
+     i6 = 0;
+     i7 = 0;
+    })
+  }
+
+ }
+
+  lemongrassLAST(){
+  this.hide();
+  imageMode(CENTER);
+  image(this.miniLEMONGRASS_IMG,displayWidth/2 - 400,displayHeight/2-400,displayWidth-1340,displayHeight-800);
+  textSize(38);
+  text(":" + lemongrasses + " GRAMS",displayWidth/2 - 350,displayHeight/2 - 400);
+  this.productBUTTON4.show();
+  this.productBUTTON4.position(displayWidth/2 - 300,displayHeight/2 - 100);
+  if(i4 <1  )
+  this.productBUTTON4.mousePressed(()=>{
+    i4=i4+1
+  })
+
+  if(i4 === 1){
+    imageMode(CENTER);
+    image(this.theLAST_IMG,displayWidth/2+200,displayHeight/2 -150);
+    image(this.lemongrassPRODUCT_IMG,displayWidth/2-300,displayHeight/2-100,displayWidth/2-400,displayHeight/2-300);
+    this.productBUTTON4.hide();
+    textSize(17)
+    fill("#E65C90");
+    text("YOU HAVE USED THE HARVESTED LEMONGRASS TO PROCESS IT INTO",displayWidth/2-250,displayHeight/2+50);
+    text("LEMONGRASS OIL. THE BENEFITS OF GROWING YOUR OWN PLANTS ARE MANY.",displayWidth/2-250,displayHeight/2+100);
+    text("PLEASE GROW YOUR OWN PLANTS AT HOME TO HELP THE ENVIRONMENT",displayWidth/2-250,displayHeight/2+150);
+    text("WITH THE KNOWLEDGE YOU HAVE GAINED. CLICK THE RESTART BUTTON TO",displayWidth/2-250,displayHeight/2+200);
+    text("PLAY THE GAME AGAIN.",displayWidth/2-250,displayHeight/2+250);
+    this.resetBUTTON.show();
+    this.resetBUTTON.position(displayWidth - 300, displayHeight - 70);
+    this.resetBUTTON.mousePressed(()=>{
+      gameSTATE = 0
+      npk1 = 25;
+      n1 = 25;
+      n2 = 25;
+      manure1 = 25;
+      manure2 = 25;
+      water1 = 50;
+      water2 = 50;
+      water3 = 50;
+      water4 = 50;
+      water5 = 50;
+      water6 = 50;
+      water7 = 50;
+      sunflower_water = 0;
+      calendula_water = 0;
+      tomato_water = 0;
+      lemongrass_water = 0;
+      marigold_water = 0;
+      basil_water = 0;
+      lavender_water = 0;
+      tomato_npk = 0;
+      lemongrass_n2 = 0;
+      marigold_n2 = 0;
+      basil_om = 0;
+      lavender_om = 0;
+
+      this.W1.style('background','#E5E5E5');
+      this.W2.style('background','#E5E5E5');
+      this.W3.style('background','#E5E5E5');
+      this.W4.style('background','#E5E5E5');
+      this.W5.style('background','#E5E5E5');
+
+     lives = 2;
+     lives1 = 2;
+     lives3 = 2;
+     lives4 = 2;
+     lives5 = 2;
+     lives6 = 2;
+     lives7 = 2;
+     sunflowers = 0;
+     calendulas = 0;
+     tomatoes = 0;
+     lemongrasses = 0;
+     marigolds = 0;
+     basils = 0;
+     lavenders = 0;
+     i1 = 0;
+     i2 = 0;
+     i3 = 0;
+     i4 = 0;
+     i5 = 0;
+     i6 = 0;
+     i7 = 0;
+    })
+  }
+
+ }
+
+ marigoldLAST(){
+  this.hide();
+  imageMode(CENTER);
+  image(this.miniMARIGOLD_IMG,displayWidth/2 - 400,displayHeight/2-400,displayWidth-1340,displayHeight-800);
+  textSize(38);
+  text(":" + marigolds,displayWidth/2 - 350,displayHeight/2 - 400);
+  this.productBUTTON5.show();
+  this.productBUTTON5.position(displayWidth/2 - 300,displayHeight/2 - 100);
+  if(i5 <1  )
+  this.productBUTTON5.mousePressed(()=>{
+    i5=i5+1
+  })
+
+  if(i5 === 1){
+    imageMode(CENTER);
+    image(this.theLAST_IMG,displayWidth/2+200,displayHeight/2 -150);
+    image(this.marigoldPRODUCT_IMG,displayWidth/2-300,displayHeight/2-100,displayWidth/2-500,displayHeight/2-300);
+    this.productBUTTON5.hide();
+    textSize(17);
+    fill("#E65C90");
+    text("YOU HAVE USED THE HARVESTED MARIGOLD TO PROCESS IT INTO",displayWidth/2-250,displayHeight/2+50);
+    text("MARIGOLD OIL. THE BENEFITS OF GROWING YOUR OWN PLANTS ARE MANY.",displayWidth/2-250,displayHeight/2+100);
+    text("PLEASE GROW YOUR OWN PLANTS AT HOME TO HELP THE ENVIRONMENT",displayWidth/2-250,displayHeight/2+150);
+    text("WITH THE KNOWLEDGE YOU HAVE GAINED. CLICK THE RESTART BUTTON TO",displayWidth/2-250,displayHeight/2+200);
+    text("PLAY THE GAME AGAIN.",displayWidth/2-250,displayHeight/2+250);
+    this.resetBUTTON.show();
+    this.resetBUTTON.position(displayWidth - 300, displayHeight - 70);
+    this.resetBUTTON.mousePressed(()=>{
+      gameSTATE = 0
+      npk1 = 25;
+      n1 = 25;
+      n2 = 25;
+      manure1 = 25;
+      manure2 = 25;
+      water1 = 50;
+      water2 = 50;
+      water3 = 50;
+      water4 = 50;
+      water5 = 50;
+      water6 = 50;
+      water7 = 50;
+      sunflower_water = 0;
+      calendula_water = 0;
+      tomato_water = 0;
+      lemongrass_water = 0;
+      marigold_water = 0;
+      basil_water = 0;
+      lavender_water = 0;
+      tomato_npk = 0;
+      lemongrass_n2 = 0;
+      marigold_n2 = 0;
+      basil_om = 0;
+      lavender_om = 0;
+
+      this.W1.style('background','#E5E5E5');
+      this.W2.style('background','#E5E5E5');
+      this.W3.style('background','#E5E5E5');
+      this.W4.style('background','#E5E5E5');
+      this.W5.style('background','#E5E5E5');
+
+     lives = 2;
+     lives1 = 2;
+     lives3 = 2;
+     lives4 = 2;
+     lives5 = 2;
+     lives6 = 2;
+     lives7 = 2;
+     sunflowers = 0;
+     calendulas = 0;
+     tomatoes = 0;
+     lemongrasses = 0;
+     marigolds = 0;
+     basils = 0;
+     lavenders = 0;
+     i1 = 0;
+     i2 = 0;
+     i3 = 0;
+     i4 = 0;
+     i5 = 0;
+     i6 = 0;
+     i7 = 0;
+    })
+  }
+
+ }
+
+ basilLAST(){
+  this.hide();
+  imageMode(CENTER);
+  image(this.miniBASIL_IMG,displayWidth/2 - 400,displayHeight/2-400,displayWidth-1340,displayHeight-800);
+  textSize(38);
+  text(":" + basils + " GRAMS",displayWidth/2 - 350,displayHeight/2 - 400);
+  this.productBUTTON6.show();
+  this.productBUTTON6.position(displayWidth/2 - 300,displayHeight/2 - 100);
+  if(i6 <1  )
+  this.productBUTTON6.mousePressed(()=>{
+    i6=i6+1
+  })
+
+  if(i6 === 1){
+    imageMode(CENTER);
+    image(this.theLAST_IMG,displayWidth/2+200,displayHeight/2 -150);
+    image(this.basilPRODUCT_IMG,displayWidth/2-300,displayHeight/2-100,displayWidth/2-500,displayHeight/2-300);
+    this.productBUTTON6.hide();
+    textSize(17);
+    fill("#E65C90");
+    text("YOU HAVE USED THE HARVESTED BASIL TO PROCESS IT INTO",displayWidth/2-250,displayHeight/2+50);
+    text("BASIL OIL. THE BENEFITS OF GROWING YOUR OWN PLANTS ARE MANY.",displayWidth/2-250,displayHeight/2+100);
+    text("PLEASE GROW YOUR OWN PLANTS AT HOME TO HELP THE ENVIRONMENT",displayWidth/2-250,displayHeight/2+150);
+    text("WITH THE KNOWLEDGE YOU HAVE GAINED. CLICK THE RESTART BUTTON TO",displayWidth/2-250,displayHeight/2+200);
+    text("PLAY THE GAME AGAIN.",displayWidth/2-250,displayHeight/2+250);
+    this.resetBUTTON.show();
+    this.resetBUTTON.position(displayWidth - 300, displayHeight - 70);
+    this.resetBUTTON.mousePressed(()=>{
+      gameSTATE = 0
+      npk1 = 25;
+      n1 = 25;
+      n2 = 25;
+      manure1 = 25;
+      manure2 = 25;
+      water1 = 50;
+      water2 = 50;
+      water3 = 50;
+      water4 = 50;
+      water5 = 50;
+      water6 = 50;
+      water7 = 50;
+      sunflower_water = 0;
+      calendula_water = 0;
+      tomato_water = 0;
+      lemongrass_water = 0;
+      marigold_water = 0;
+      basil_water = 0;
+      lavender_water = 0;
+      tomato_npk = 0;
+      lemongrass_n2 = 0;
+      marigold_n2 = 0;
+      basil_om = 0;
+      lavender_om = 0;
+
+      this.W1.style('background','#E5E5E5');
+      this.W2.style('background','#E5E5E5');
+      this.W3.style('background','#E5E5E5');
+      this.W4.style('background','#E5E5E5');
+      this.W5.style('background','#E5E5E5');
+
+     lives = 2;
+     lives1 = 2;
+     lives3 = 2;
+     lives4 = 2;
+     lives5 = 2;
+     lives6 = 2;
+     lives7 = 2;
+     sunflowers = 0;
+     calendulas = 0;
+     tomatoes = 0;
+     lemongrasses = 0;
+     marigolds = 0;
+     basils = 0;
+     lavenders = 0;
+     i1 = 0;
+     i2 = 0;
+     i3 = 0;
+     i4 = 0;
+     i5 = 0;
+     i6 = 0;
+     i7 = 0;
+    })
+  }
+
+ }
+
+ lavenderLAST(){
+  this.hide();
+  imageMode(CENTER);
+  image(this.miniLAVENDER_IMG,displayWidth/2 - 400,displayHeight/2-400,displayWidth-1340,displayHeight-800);
+  textSize(38);
+  text(":" + lavenders + " GRAM",displayWidth/2 - 350,displayHeight/2 - 400);
+  this.productBUTTON7.show();
+  this.productBUTTON7.position(displayWidth/2 - 300,displayHeight/2 - 100);
+  if(i7 <1  )
+  this.productBUTTON7.mousePressed(()=>{
+    i7=i7+1
+  })
+
+  if(i7 === 1){
+    imageMode(CENTER);
+    image(this.theLAST_IMG,displayWidth/2+200,displayHeight/2 -100);
+    image(this.lavenderPRODUCT_IMG1,displayWidth/2-300,displayHeight/2-100,displayWidth/2-500,displayHeight/2-250);
+    image(this.lavenderPRODUCT_IMG2,displayWidth/2-100,displayHeight/2-100,displayWidth/2-450,displayHeight/2-250);
+    image(this.lavenderPRODUCT_IMG3,displayWidth/2+100,displayHeight/2-100,displayWidth/2-450,displayHeight/2-300);
+    this.productBUTTON7.hide();
+    textSize(17);
+    fill("#E65C90");
+    text("YOU HAVE USED THE HARVESTED LAVENDER TO PROCESS IT INTO",displayWidth/2-250,displayHeight/2+50);
+    text("LAVENDER OIL,PERFUM AND SOAP. THE BENEFITS OF GROWING YOUR OWN PLANTS ARE MANY.",displayWidth/2-250,displayHeight/2+100);
+    text("PLEASE GROW YOUR OWN PLANTS AT HOME TO HELP THE ENVIRONMENT",displayWidth/2-250,displayHeight/2+150);
+    text("WITH THE KNOWLEDGE YOU HAVE GAINED. CLICK THE RESTART BUTTON TO",displayWidth/2-250,displayHeight/2+200);
+    text("PLAY THE GAME AGAIN.",displayWidth/2-250,displayHeight/2+250);
+    this.resetBUTTON.show();
+    this.resetBUTTON.position(displayWidth - 300, displayHeight - 70);
+    this.resetBUTTON.mousePressed(()=>{
+      gameSTATE = 0
+      npk1 = 25;
+      n1 = 25;
+      n2 = 25;
+      manure1 = 25;
+      manure2 = 25;
+      water1 = 50;
+      water2 = 50;
+      water3 = 50;
+      water4 = 50;
+      water5 = 50;
+      water6 = 50;
+      water7 = 50;
+      sunflower_water = 0;
+      calendula_water = 0;
+      tomato_water = 0;
+      lemongrass_water = 0;
+      marigold_water = 0;
+      basil_water = 0;
+      lavender_water = 0;
+      tomato_npk = 0;
+      lemongrass_n2 = 0;
+      marigold_n2 = 0;
+      basil_om = 0;
+      lavender_om = 0;
+
+      this.W1.style('background','#E5E5E5');
+      this.W2.style('background','#E5E5E5');
+      this.W3.style('background','#E5E5E5');
+      this.W4.style('background','#E5E5E5');
+      this.W5.style('background','#E5E5E5');
+
+     lives = 2;
+     lives1 = 2;
+     lives3 = 2;
+     lives4 = 2;
+     lives5 = 2;
+     lives6 = 2;
+     lives7 = 2;
+     sunflowers = 0;
+     calendulas = 0;
+     tomatoes = 0;
+     lemongrasses = 0;
+     marigolds = 0;
+     basils = 0;
+     lavenders = 0;
+     i1 = 0;
+     i2 = 0;
+     i3 = 0;
+     i4 = 0;
+     i5 = 0;
+     i6 = 0;
+     i7 = 0;
+    })
+  }
+}
 
 }
 

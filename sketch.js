@@ -37,14 +37,35 @@ var lemongrass_n2;
 var marigold_n2;
 var basil_om;
 var lavender_om;
-var lives = 3;
-var sunflowers = 7;
+var lives = 2;
+var lives1 = 2;
+var lives3 = 2;
+var lives4 = 2;
+var lives5 = 2;
+var lives6 = 2;
+var lives7 = 2;
+var sunflowers = 0;
+var calendulas = 0;
+var tomatoes = 0;
+var lemongrasses = 0;
+var marigolds = 0;
+var basils = 0;
+var lavenders = 0;
+var i1 = 0;
+var i2 = 0;
+var i3 = 0;
+var i4 = 0;
+var i5 = 0;
+var i6 = 0;
+var i7 = 0;
+
+/*var sunflowers = 7;
 var calendulas = 5;
-var tomatoes = 12;
+var tomatoes = 18;
 var lemongrasses = 500;
 var marigolds = 7;
 var basils = 500;
-var lavenders = 650;
+var lavenders = 650;*/
 
 var seed_soil ={
   "SUNFLOWER":"SUNNY",
@@ -208,5 +229,35 @@ function draw() {
       if(gameSTATE === "LAVENDER_HARVEST"){
         gametest.LAVENDER_HARVESTING(lavenders);
       }
+
+      if(gameSTATE === "calendulaFINAL"){
+        gametest.calendulaLAST();
+      }
+
+      else if(gameSTATE === "sunflowerFINAL"){
+        gametest.sunflowerLAST();
+      }
+
+      else if(gameSTATE === "tomatoFINAL"){
+        gametest.tomatoLAST();
+      }
+
+      else if(gameSTATE === "lemongrassFINAL"){
+        gametest.lemongrassLAST();
+      }
+
+      else if(gameSTATE === "marigoldFINAL"){
+        gametest.marigoldLAST();
+      }
+
+      else if(gameSTATE === "basilFINAL"){
+        gametest.basilLAST();
+      }
+
+      else if(gameSTATE === "lavenderFINAL"){
+        gametest.lavenderLAST();
+      }
+
+ 
 
 }
