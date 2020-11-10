@@ -223,6 +223,8 @@ class GAME {
 
         theLAST_IMG = loadImage("images/MOTHER-NATURE.png")
 
+        trialIMG = loadImage("images/TEMPORARY.png")
+
    hide(){
      this.button.hide();
      this.readBUTTON.hide();
@@ -335,13 +337,12 @@ class GAME {
    story(){
 
      // GAMESTATE 0
-
      // TO CREATE THE GIRL SPRITE
       this.hide();
       this.button.show();   
 
-     imageMode(CENTER);
-     image(this.GIRL_IMG,displayWidth - 900,displayHeight - 200,400,500);
+     /*imageMode(CENTER);
+     image(this.GIRL_IMG,displayWidth - 900,displayHeight - 300,400,500);
 
      // TO SET THE SPEECH BUBBLE
      imageMode(CENTER);
@@ -364,11 +365,11 @@ class GAME {
      fill("#0F2E27");
      textFont("Arial");
      textSize(40);
-     text("VIRTUAL GARDENER GAME", displayWidth/2 - 300, displayHeight/2 - 400);
+     text("VIRTUAL GARDENER GAME", displayWidth/2 - 300, displayHeight/2 - 400);*/
 
      // TO CREATE THE BUTTON TO PROCEED
     
-     this.button.position(displayWidth - 300, displayHeight - 70);
+     this.button.position(windowWidth/1.5, windowHeight/1.2);
      this.button.style('background','#B5EAD7')
      this.button.size(100,50)
      this.button.mousePressed(function(){
@@ -391,12 +392,11 @@ rules(){
 
   //this.readBUTTON = createButton('READ THE BOOK');
   this.readBUTTON.show();
-  this.readBUTTON.position(displayWidth -  200, displayHeight - 300);
+  this.readBUTTON.position(windowWidth/1.18, windowHeight/1.4);
   this.readBUTTON.style('background','#F8E1E7');
   this.readBUTTON.size(100,50);
   this.readBUTTON.mousePressed(function(){
 
-    console.log("OPENING BOOK...");
     gameSTATE = 2
 
   })
@@ -404,10 +404,10 @@ rules(){
 
   // TO SET THE SPEECH BUBBLE
   imageMode(CENTER);
-  image(this.SPEECHbUBBLE,displayWidth/2 - 400,displayHeight/2 - 200,400,400);
+  image(this.SPEECHbUBBLE,windowWidth/4.5,windowHeight/3.5,windowWidth/4,windowWidth/4);
 
   // TO EXPLAIN THE RULES
-  textSize(13);
+  textSize(12);
   fill("#E65C90")
   text("YOU WILL HAVE 2 SEEDS OF EACH PLANT. TO",displayWidth/2 - 550,displayHeight/2 - 300);
   text("GROW THEM, YOU WILL HAVE TO READ THE BOOK.",displayWidth/2 - 560, displayHeight/2 -280);
@@ -866,7 +866,7 @@ gameCAL(weather1){
      this.W1.position(displayWidth/2 - 550,displayHeight/2 + 100);
      this.W1.mousePressed(()=>{
        this.W1.style('background','#ED3835')
-       lives1 -=1
+       lives1 -=1;
      })
      this.W2.position(displayWidth/2 -50,displayHeight/2 + 100); 
      this.W2.mousePressed(()=>{
@@ -878,8 +878,10 @@ gameCAL(weather1){
 
      gameSTATE = 311
      lives1 +=1
+})
 
-     })
+
+
      this.W1.size(100,100);
      this.W2.size(100,100);
      this.W3.size(100,100);
@@ -912,6 +914,14 @@ gameCAL(weather1){
       this.W4.style('background','#E5E5E5');
       this.W5.style('background','#E5E5E5');
     })
+
+    if(lives ===0){
+      imageMode(CENTER);
+      image(this.trialIMG,displayWidth/2,displayHeight/2,displayWidth,displayHeight);
+      this.hide();
+      this.resetBUTTON.show();
+      this.resetBUTTON.position(displayWidth - 300, displayHeight - 70);
+    }
 
   }
 
@@ -2738,6 +2748,10 @@ if(sunflowers === 7){
     })
   }
 }
+
+   calendulaGAMEend(){
+     text("THE GAME HAS ENDED.",displayWidth/2,displayHeight/2)
+   }
 
 }
 

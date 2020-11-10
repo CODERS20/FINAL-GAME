@@ -81,7 +81,7 @@ var engine, world;
 
 function preload(){
 
-backIMG = loadImage("images/BACKGROUND.jpg");
+backIMG = loadImage("images/BACKGROUND.png");
 life2 = loadImage("images/LIFE.png")
 
 }
@@ -94,7 +94,7 @@ function setup() {
    gametest = new GAME();
 
    // TO CREATE THE CANVAS
-   createCanvas(displayWidth,displayHeight);
+   createCanvas(windowWidth,windowHeight);
  
 }
 
@@ -103,7 +103,8 @@ function draw() {
   
    // GAMESTATE 0
    if(gameSTATE === 0){
-     background(backIMG);
+     imageMode(CENTER)
+     image(backIMG,windowWidth/2,windowHeight/2,windowWidth,windowHeight)
      gametest.story();
 
    }
@@ -258,6 +259,5 @@ function draw() {
         gametest.lavenderLAST();
       }
 
- 
-
+    
 }
