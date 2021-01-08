@@ -337,37 +337,10 @@ class GAME {
    story(){
 
      // GAMESTATE 0
-     // TO CREATE THE GIRL SPRITE
+    
       this.hide();
       this.button.show();   
 
-     /*imageMode(CENTER);
-     image(this.GIRL_IMG,displayWidth - 900,displayHeight - 300,400,500);
-
-     // TO SET THE SPEECH BUBBLE
-     imageMode(CENTER);
-     image(this.SPEECHbUBBLE,displayWidth/2 + 100,displayHeight/2 - 100,350,350);
-
-     //TO GIVE THE STORY
-     fill("#E65C90");
-     textSize(17);
-     text("I AM EMILY.I WANT TO BE A",displayWidth - 740,displayHeight - 650);
-     text("BOTANIST. LAST SUMMER I GOT",displayWidth - 750,displayHeight - 630);
-     text("A BAG OF SEEDS AND A BOOK",displayWidth - 760,displayHeight - 610);
-     text("ABOUT GROWING PLANTS. PLEASE",displayWidth - 770, displayHeight - 590);
-     text("HELP ME GROW THE DIFFERENT.",displayWidth - 770, displayHeight - 570);
-     text("PLANTS. WE WILL ALSO LEARN",displayWidth - 770,displayHeight - 550);
-     text("ABOUT THE PLANTS IN OUR",displayWidth - 760, displayHeight - 530);
-     text("JOURNEY. CLICK THE BUTTON",displayWidth - 750,displayHeight - 510);
-     text("TO CONTINUE.", displayWidth - 720,displayHeight - 490);
-
-     // TO GIVE THE GAME NAME
-     fill("#0F2E27");
-     textFont("Arial");
-     textSize(40);
-     text("VIRTUAL GARDENER GAME", displayWidth/2 - 300, displayHeight/2 - 400);*/
-
-     // TO CREATE THE BUTTON TO PROCEED
     
      this.button.position(windowWidth/1.5, windowHeight/1.2);
      this.button.style('background','#B5EAD7')
@@ -400,37 +373,37 @@ rules(){
     gameSTATE = 2
 
   })
-
+ console.log(windowWidth,windowHeight)
 
   // TO SET THE SPEECH BUBBLE
   imageMode(CENTER);
   image(this.SPEECHbUBBLE,windowWidth/4.5,windowHeight/3.5,windowWidth/4,windowWidth/4);
 
   // TO EXPLAIN THE RULES
-  textSize(12);
+  textSize(9.5);
   fill("#E65C90")
-  text("YOU WILL HAVE 2 SEEDS OF EACH PLANT. TO",displayWidth/2 - 550,displayHeight/2 - 300);
-  text("GROW THEM, YOU WILL HAVE TO READ THE BOOK.",displayWidth/2 - 560, displayHeight/2 -280);
-  text("IF YOU DO A MISTAKE YOU WILL LOSE ONE OF THE",displayWidth/2 - 570, displayHeight/2 - 260);
-  text("SEEDS. CLICK THE PLAY BUTTON TO START PLAYING.",displayWidth/2 - 580,displayHeight/2 - 240);
-  text("TO SEE THE BOOK, CLICK READ THE BOOK", displayWidth/2 - 580, displayHeight/2 - 220);
-  text("BUTTON. ALL THE BEST! :-)",displayWidth/2 - 570, displayHeight/2 - 200);
+  text("YOU WILL HAVE 2 SEEDS OF EACH PLANT. TO",windowWidth/8,windowHeight/5.3);
+  text("GROW THEM, YOU WILL HAVE TO READ THE BOOK.",windowWidth/8, windowHeight/4.7);
+  text("IF YOU DO A MISTAKE YOU WILL LOSE ONE OF THE",windowWidth/8.3, windowHeight/4.2);
+  text("SEEDS. CLICK THE PLAY BUTTON TO START PLAYING.",windowWidth/8.4,windowHeight/3.8);
+  text("TO SEE THE BOOK, CLICK READ THE BOOK", windowWidth/8, windowHeight/3.5);
+  text("BUTTON. ALL THE BEST! :-)",windowWidth/8, windowHeight/3.2 );
   
   // TO DISPLAY THE GIRL
   imageMode(CENTER);
-  image(this.GIRL_IMG_2,displayWidth - 1300,displayHeight - 200,400,500);
+  image(this.GIRL_IMG_2,windowWidth/8,windowHeight/1.5,windowWidth/3.5,windowWidth/3);
 
   // TO DISPLAY THE BOOK
   imageMode(CENTER);
-  image(this.BOOKimage,displayWidth - 150,displayHeight - 450,300,300);
+  image(this.BOOKimage,windowWidth/1.13,windowHeight/1.8,windowWidth/3.9,windowHeight/2.7);
 
   //TO DISPLAY GAME
   imageMode(CENTER);
-  image(this.GAMEimage,displayWidth - 750, displayHeight - 450,200,200);
+  image(this.GAMEimage,windowWidth/2.2, windowHeight/1.8,windowWidth/6,windowWidth/6);
 
   // TO CREATE GAME BUTTON
   this.gameBUTTON.show();
-  this.gameBUTTON.position(displayWidth - 800,displayHeight - 300);
+  this.gameBUTTON.position(windowWidth/2.4,windowHeight/1.4);
   this.gameBUTTON.style('background','#DFD9FC');
   this.gameBUTTON.size(100,50);
   this.gameBUTTON.mousePressed(function(){
@@ -449,78 +422,78 @@ firstpage(){
 
 background("#55d9d4");
 this.hide();
-this.vipButton.show();
+this.vipButton.show(); 
 
-this.vipButton.position(displayWidth - 200, displayHeight - 100);
-this.vipButton.size(150,40);
+this.vipButton.position(windowWidth/1.4, windowHeight/1.1);
+this.vipButton.size(windowWidth/10,windowHeight/20);
 this.vipButton.mousePressed(function(){
   gameSTATE = 1;
 })
 fill("black");
-textSize(20)
-text("PICK A PLANT",displayWidth/2 -70, displayHeight/2 - 400)
+textSize(12)
+text("PICK A PLANT",windowWidth/2.2, windowHeight/8)
 // CALENDULA, SUNFLOWER,TOMATO,LEMONGRASS, MARIGOLD, BASIL, LAVENDER
 
 imageMode(CENTER);
-image(this.CALENDULA_IMG,displayWidth/2 - 500,displayHeight/2 - 200,170,170);
-image(this.SUNFLOWER_IMG,displayWidth/2,displayHeight/2 - 200,170,170);
-image(this.TOMATO_IMG, displayWidth/2 + 500, displayHeight/2 - 200,170,170);
-image(this.LEMONGRASS_IMG,displayWidth/2 - 500, displayHeight/2 + 70,170,170);
-image(this.MARIGOLD_IMG,displayWidth/2,displayHeight/2 + 70,170,170);
-image(this.BASIL_IMG,displayWidth/2 + 500, displayHeight/2 + 70,170,170);
-image(this.LAVENDER_IMG,displayWidth/2,displayHeight/2 + 340,170,170);
+image(this.CALENDULA_IMG,windowWidth/7,windowHeight/3.5,windowWidth/8.5,windowWidth/8.5);
+image(this.SUNFLOWER_IMG,windowWidth/2,windowHeight/3.5,windowWidth/8.5,windowWidth/8.5);
+image(this.TOMATO_IMG, windowWidth/1.2,windowHeight/3.5,windowWidth/8.5,windowWidth/8.5);
+image(this.LEMONGRASS_IMG,windowWidth/7,windowHeight/1.75,windowWidth/8.5,windowWidth/8.5);
+image(this.MARIGOLD_IMG,windowWidth/2,windowHeight/1.75,windowWidth/8.5,windowWidth/8.5);
+image(this.BASIL_IMG,windowWidth/1.2,windowHeight/1.75,windowWidth/8.5,windowWidth/8.5);
+image(this.LAVENDER_IMG,windowWidth/2,windowHeight/1.15,windowWidth/8.5,windowWidth/8.5);
 
 this.CalendulaButton.show();
-this.CalendulaButton.position(displayWidth/2 - 550,displayHeight/2 - 100);
-this.CalendulaButton.size(100,40);
+this.CalendulaButton.position(windowWidth/9,windowHeight/2.5);
+this.CalendulaButton.size(windowWidth/13,windowHeight/20);
 this.CalendulaButton.style('background','#F49C3F');
 this.CalendulaButton.mousePressed(function(){
   gameSTATE = 21
 })
 
 this.SunflowerButton.show();
-this.SunflowerButton.position(displayWidth/2 - 50,displayHeight/2 - 100);
-this.SunflowerButton.size(100,40);
+this.SunflowerButton.position(windowWidth/2.1,windowHeight/2.5);
+this.SunflowerButton.size(windowWidth/13,windowHeight/20);
 this.SunflowerButton.style('background','#FEE84E');
 this.SunflowerButton.mousePressed(function(){
   gameSTATE = 22
 })
 
 this.TomatoButton.show();
-this.TomatoButton.position(displayWidth/2 + 450,displayHeight/2 - 100);
-this.TomatoButton.size(100,40);
+this.TomatoButton.position(windowWidth/1.25,windowHeight/2.5);
+this.TomatoButton.size(windowWidth/13,windowHeight/20);
 this.TomatoButton.style('background','#D4312C');
 this.TomatoButton.mousePressed(function(){
   gameSTATE = 23
 })
 
 this.LemongrassButton.show();
-this.LemongrassButton.position(displayWidth/2 - 550,displayHeight/2 + 170);
-this.LemongrassButton.size(100,40);
+this.LemongrassButton.position(windowWidth/9,windowHeight/1.45);
+this.LemongrassButton.size(windowWidth/13,windowHeight/20);
 this.LemongrassButton.style('background','#75B630');
 this.LemongrassButton.mousePressed(function(){
   gameSTATE = 24
 })
 
 this.MarigoldButton.show();
-this.MarigoldButton.position(displayWidth/2 -50,displayHeight/2 + 170);
-this.MarigoldButton.size(100,40);
+this.MarigoldButton.position(windowWidth/2.1,windowHeight/1.45);
+this.MarigoldButton.size(windowWidth/13,windowHeight/20);
 this.MarigoldButton.style('background','#EF6937');
 this.MarigoldButton.mousePressed(function(){
   gameSTATE = 25
 })
 
 this.BasilButton.show();
-this.BasilButton.position(displayWidth/2 + 450,displayHeight/2 + 170);
-this.BasilButton.size(100,40);
+this.BasilButton.position(windowWidth/1.25,windowHeight/1.45);
+this.BasilButton.size(windowWidth/13,windowHeight/20);
 this.BasilButton.style('background','#DAF14A');
 this.BasilButton.mousePressed(function(){
   gameSTATE = 26
 })
 
 this.LavenderButton.show();
-this.LavenderButton.position(displayWidth/2 + 100,displayHeight/2 + 340);
-this.LavenderButton.size(100,40);
+this.LavenderButton.position(windowWidth/1.7,windowHeight/1.2);
+this.LavenderButton.size(windowWidth/13,windowHeight/20);
 this.LavenderButton.style('background','#B17EDF');
 this.LavenderButton.mousePressed(function(){
   gameSTATE = 27
@@ -757,59 +730,64 @@ background("#AAD9D5");
 this.hide();
 
 fill("black");
-textSize(20)
-text("PICK A SEED",displayWidth/2 -70, displayHeight/2 - 400)
-c1 = createSprite(displayWidth/2 - 380,displayHeight/2 - 300,100,100)
+textSize(10)
+text("PICK A SEED",windowWidth/2.2, windowHeight/8)
+c1 = createSprite(windowWidth/4,windowHeight/5,windowWidth/13,windowHeight/13)
 c1.addImage(this.seedCal);
-c2 = createSprite(displayWidth/2 - 300,displayHeight/2 - 300,100,100)
+c2 = createSprite(windowWidth/3.6,windowHeight/5,windowWidth/13,windowHeight/13)
 c2.addImage(this.seedCal);
 this.gameC.show();
-this.gameC.position(displayWidth/2-400,displayHeight/2 - 260);
-this.gameC.size(100,50);
+this.gameC.position(windowWidth/4.5,windowHeight/4.5);
+this.gameC.style('background','#F3E0E3');
+this.gameC.size(windowWidth/13,windowHeight/20);
 this.gameC.mousePressed(function(){
   gameSTATE = 31;
 })
 
-s1 = createSprite(displayWidth/2,displayHeight/2 - 300,100,100);
+s1 = createSprite(windowWidth/2,windowHeight/5,windowWidth/13,windowHeight/13);
 s1.addImage(this.seedSun);
-s2 = createSprite(displayWidth/2+80,displayHeight/2 - 300,100,100)
+s2 = createSprite(windowWidth/1.8,windowHeight/5,windowWidth/13,windowHeight/13)
 s2.addImage(this.seedSun);
 this.gameS.show();
-this.gameS.position(displayWidth/2,displayHeight/2-260);
-this.gameS.size(100,50);
+this.gameS.position(windowWidth/2,windowHeight/4);
+this.gameS.style('background','#F3E0E3');
+this.gameS.size(windowWidth/13,windowHeight/20);
 this.gameS.mousePressed(function(){
   gameSTATE = 32;
 })
 
-t1 = createSprite(displayWidth/2 + 300,displayHeight/2 - 300,100,100);
+t1 = createSprite(windowWidth/1.3,windowHeight/5,windowWidth/13,windowHeight/13);
 t1.addImage(this.seedTom);
-t2 = createSprite(displayWidth/2 + 380,displayHeight/2 - 300,100,100);
+t2 = createSprite(windowWidth/1.4,windowHeight/5,windowWidth/13,windowHeight/13);
 t2.addImage(this.seedTom);
 this.gameT.show();
-this.gameT.position(displayWidth/2 + 300,displayHeight/2 - 260);
-this.gameT.size(100,50);
+this.gameT.position(windowWidth/1.45,windowHeight/4.5);
+this.gameT.style('background','#F3E0E3');
+this.gameT.size(windowWidth/13,windowHeight/20);
 this.gameT.mousePressed(function(){
   gameSTATE = 33;
 })
 
-l1 = createSprite(displayWidth/2 - 380,displayHeight/2-160,100,100);
+l1 = createSprite(windowWidth/4,windowHeight/3,windowWidth/13,windowHeight/13);
 l1.addImage(this.seedLem);
-l2 = createSprite(displayWidth/2 - 340,displayHeight/2- 160,100,100);
+l2 = createSprite(windowWidth/3.6,windowHeight/3,windowWidth/13,windowHeight/13);
 l2.addImage(this.seedLem);
 this.gameL.show();
-this.gameL.position(displayWidth/2 - 400,displayHeight/2 -120);
-this.gameL.size(100,50);
+this.gameL.position(windowWidth/4.5,windowHeight/2.5);
+this.gameL.style('background','#F3E0E3');
+this.gameL.size(windowWidth/13,windowHeight/20);
 this.gameL.mousePressed(function(){
   gameSTATE = 34;
 })
 
-m1 = createSprite(displayWidth/2+20,displayHeight/2 - 160,100,100);
+m1 = createSprite(windowWidth/2,windowHeight/2.8,windowWidth/13,windowHeight/13);
 m1.addImage(this.seedMar);
-m2 = createSprite(displayWidth/2 + 60,displayHeight/2 -160,100,100);
+m2 = createSprite(windowWidth/1.9,windowHeight/2.8,windowWidth/13,windowHeight/13);
 m2.addImage(this.seedMar);
 this.gameM.show();
-this.gameM.position(displayWidth/2,displayHeight/2-120);
-this.gameM.size(100,50);
+this.gameM.style('background','#F3E0E3');
+this.gameM.position(windowWidth/2.1,windowHeight/2.5);
+this.gameM.size(windowWidth/13,windowHeight/20);
 this.gameM.mousePressed(function(){
   gameSTATE = 35;
 })

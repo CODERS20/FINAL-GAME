@@ -100,7 +100,8 @@ function setup() {
 
 function draw() {
    background("#BFD540"); 
-  
+
+
    // GAMESTATE 0
    if(gameSTATE === 0){
      imageMode(CENTER)
@@ -108,7 +109,6 @@ function draw() {
      gametest.story();
 
    }
-
    //GAMESTATE 1
    if(gameSTATE === 1){
      gametest.rules(); 
